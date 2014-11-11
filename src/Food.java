@@ -1,5 +1,5 @@
 
-public abstract class Food {
+public class Food {
 	
 	protected String foodName;
 	private double price;
@@ -10,6 +10,10 @@ public abstract class Food {
 	}
 	
 	public Food(String newFoodName){
+		this.foodName = newFoodName;
+	}
+        
+        public Food(int num, String newFoodName, String newDescription){
 		this.foodName = newFoodName;
 	}
 	
@@ -26,6 +30,6 @@ public abstract class Food {
 		return foodName;
 	}
 	
-	public abstract double getSize(); //basically all subclasses have this method defined in it.
+	//public abstract double getSize(); //basically all subclasses have this method defined in it.
 
 }

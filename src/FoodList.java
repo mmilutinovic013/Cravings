@@ -9,4 +9,8 @@
  */
 public class FoodList {
     
+    public FoodList(){
+        
+    }
+    
 }
