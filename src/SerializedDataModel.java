@@ -11,6 +11,7 @@ public class SerializedDataModel {
     
     private UserList theUserList;
     private FoodList theFoodList;
+    private FoodGroupList theFoodGroupList; // unsure what is happening with this atm
     private long nextFoodNumber;
     
     
@@ -37,7 +38,7 @@ public class SerializedDataModel {
     }
     
     public FoodGroupList getFoodGroupList(){
-        return ; // This sucks...
+        return theFoodGroupList; // This sucks...
     }
     
     private void createTestSerializedDataModel(){
