@@ -40,5 +40,11 @@ public class SerializedDataCntl {
     private void createTestSerializedDataModel(){
         theSerializedDataModel = new SerializedDataModel();
     }
+    private void testPrintSerializedDataModel(){
+        
+    }
     
+    private void readSerializedDataModel(){
+        
+    }
 }

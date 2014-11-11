@@ -48,6 +48,6 @@ public class SerializedDataModel {
                 theFoodList.getListOfFoods().add(tmpFood);
             }
         }
-    }
+    }    
     
 }

@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class ExternalDataCntl {
     
-    private final String EXTERNAL_DATA_PATH = "cravings_data\\";
+    private final String EXTERNAL_DATA_PATH = "cravings_data/";
     private final String FOOD_GROUP_FILE_NAME = "FD_GROUP.TXT";
     private final String FOOD_DESC_FILE_NAME = "FD_DESC.TXT";
     
