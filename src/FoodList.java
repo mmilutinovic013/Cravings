@@ -11,7 +11,7 @@ public class FoodList {
     
     public FoodList(){
         for (int i = 0; i < 100; i++) {
-            
+            // load Foods (from serialized stuffs)?
         }
     }
     
