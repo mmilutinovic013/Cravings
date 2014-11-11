@@ -36,6 +36,10 @@ public class SerializedDataModel {
         return theFoodList;
     }
     
+    public FoodGroupList getFoodGroupList(){
+        return ; // This sucks...
+    }
+    
     private void createTestSerializedDataModel(){
         if(theFoodList == null){
             theFoodList = new FoodList();

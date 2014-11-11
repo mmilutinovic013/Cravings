@@ -3,7 +3,8 @@ public class Food {
 	
 	protected String foodName;
 	private double price;
-	private int calories;
+	private int foodID;
+        private String foodDescription;
 	
 	public Food(){
 		
@@ -26,9 +27,19 @@ public class Food {
 		
 	}
 	
-	public String getName(){
+	public String getFoodName(){
 		return foodName;
 	}
+        
+        public int getFoodID(){
+            return foodID;
+        }
+        
+        public String getFoodDescription(){
+            return foodDescription;
+        }
+        
+        
 	
 	//public abstract double getSize(); //basically all subclasses have this method defined in it.
 

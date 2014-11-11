@@ -14,8 +14,6 @@ public class FoodController {
     public FoodController(Food theFood2){
         theFood = theFood2;
     }
-    public Food getListOfFoods(){
-        return theFood;
-    }
+
     
 }
