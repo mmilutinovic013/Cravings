@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class ExternalDataCntl {
     
-    private final String EXTERNAL_DATA_PATH = "cravings_data/";
+    private final String EXTERNAL_DATA_PATH = "cravings_data/"; // because Macs
     private final String FOOD_GROUP_FILE_NAME = "FD_GROUP.TXT";
     private final String FOOD_DESC_FILE_NAME = "FD_DESC.TXT";
     
@@ -24,7 +24,7 @@ public class ExternalDataCntl {
             getExternalFood();
         }
     }
-    
+      
     public void getExternalFood(){
         getFoodGroup();
         // getFood();
@@ -58,6 +58,34 @@ public class ExternalDataCntl {
         
     }
     
+        public void getFoodDescription(){
+        String filePath = EXTERNAL_DATA_PATH+FOOD_DESC_FILE_NAME;
+        File foodDescriptionFile = new File(filePath);
+        try{
+            Scanner in = new Scanner(foodDescriptionFile);
+            String nextLine = "";
+        
+            while(in.hasNextLine()){
+                nextLine = in.nextLine();
+                System.out.println(nextLine);
+                FoodGroup tmpFoodGroup = new FoodGroup(nextLine);
+                SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodGroupList().getListOfFoodGroups().add(tmpFoodGroup);
+            }
+            // Simply prints the size of the newly imported FoodGroupList
+            System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodGroupList().getListOfFoodGroups().size());
+            
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        // Write the newly imported FoodGroupList to disk.
+        SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
+        // Read it back in.
+        SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
+        // Test print to see if it worked.
+        SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
+        
+    }
+        
     public boolean confirmImport(){
             boolean importConfirmed = false;
             String message = "Are you sure you want to import foods?";
