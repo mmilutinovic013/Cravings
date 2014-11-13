@@ -30,7 +30,7 @@ public class FoodListController
     public void showMainMenu()
     {
     System.out.println(parentMainMenuController);
-        parentMainMenuController.showMainMenuUIAgain();
+        parentMainMenuController.showMenu();// Need to understand what this is.
     }
 
     public void showFoodListUIAgain()
