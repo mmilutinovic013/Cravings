@@ -1,6 +1,7 @@
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
+import java.io.Serializable;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.*;
@@ -17,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author markymark1346
  */
-public class FoodListView extends JFrame {
+public class FoodListView extends JFrame implements Serializable {
     
     FoodListController parentFoodListController;
     

@@ -90,7 +90,7 @@ public class FoodTableModel extends AbstractTableModel{
     
     public void addFood(Food foodToAdd){
         this.foodTableData.add(foodToAdd);
-        this.fireTableDataChanged();
+        this.fireTableDataChanged(); // This is what updates it
     }
     
     public void deleteFood(int foodToDelete){

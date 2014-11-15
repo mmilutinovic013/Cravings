@@ -26,8 +26,8 @@ public class ExternalDataCntl {
     }
       
     public void getExternalFood(){
-        getFoodGroup();
-        // getFood();
+        getFoodGroup(); // make static so external data controller can get the list.  Translate code into string and make the data into string attribute of food
+        getFood(); // Figure this out
     }
     
     public void getFoodGroup(){
