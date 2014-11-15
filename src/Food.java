@@ -1,6 +1,7 @@
 
 public class Food {
 	
+        protected int foodNumber;
 	protected String foodName;
 	private double price;
 	private int foodID;
@@ -14,7 +15,7 @@ public class Food {
 		this.foodName = newFoodName;
 	}
         
-        public Food(int num, String newFoodName, String newDescription){
+        public Food(int newFoodNumber, String newFoodName, String newDescription){
 		this.foodName = newFoodName;
 	}
 	

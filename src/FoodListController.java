@@ -32,9 +32,5 @@ public class FoodListController
     System.out.println(parentMainMenuController);
         parentMainMenuController.showMenu();// Need to understand what this is.
     }
-
-    public void showFoodListUIAgain()
-    {
-        theFoodListView.setVisible(true);
-    }
+    
 }

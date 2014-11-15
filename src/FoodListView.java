@@ -48,6 +48,7 @@ public class FoodListView extends JFrame implements Serializable {
         {"Fish", "It is really good ", saveItForLater},
         {"Lemons", "It is really good ", saveItForLater},
     };
+    // DefaultTableModel model = new DefaultTableModel(testData, columnNames);
     DefaultTableModel model = new DefaultTableModel(testData, columnNames);
     protected JTable table = new JTable(model);
     JButton createFoodButton = new JButton("Create New FSE!");
