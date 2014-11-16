@@ -28,28 +28,7 @@ public class FoodListView extends JFrame implements Serializable {
     Boolean saveItForLater = false;
     String[] columnNames = {"Food Name", "Food Description", "Favorited!"};
     SerializedDataModel theSerializedDataModel = new SerializedDataModel();
-    Object[][] testData = {
-        {"Ham", "It is really good ", saveItForLater}, // foodName, description, button
-        {"Steak", "It is really good ", saveItForLater},
-        {"Fish", "It is really good ", saveItForLater},
-        {"Lemons", "It is really good ", saveItForLater},
-        {"Ham", "It is really good ", saveItForLater}, // foodName, description, button
-        {"Steak", "It is really good ", saveItForLater},
-        {"Fish", "It is really good ", saveItForLater},
-        {"Lemons", "It is really good ", saveItForLater},
-        {"Ham", "It is really good ", saveItForLater}, // foodName, description, button
-        {"Steak", "It is really good ", saveItForLater},
-        {"Fish", "It is really good ", saveItForLater},
-        {"Lemons", "It is really good ", saveItForLater},
-        {"Ham", "It is really good ", saveItForLater}, // foodName, description, button
-        {"Steak", "It is really good ", saveItForLater},
-        {"Fish", "It is really good ", saveItForLater},
-        {"Lemons", "It is really good ", saveItForLater},
-        {"Ham", "It is really good ", saveItForLater}, // foodName, description, button
-        {"Steak", "It is really good ", saveItForLater},
-        {"Fish", "It is really good ", saveItForLater},
-        {"Lemons", "It is really good ", saveItForLater},
-    };
+    Object[][] testData;
     // DefaultTableModel model = new DefaultTableModel(testData, columnNames);
     DefaultTableModel model;
     protected JTable table;
@@ -69,7 +48,7 @@ public class FoodListView extends JFrame implements Serializable {
             String theFoodName = FoodList.getListOfFoods().get(i).getFoodName();
             String theFoodID = FoodList.getListOfFoods().get(i).getFoodID();
             String theFoodDescription = FoodList.getListOfFoods().get(i).getFoodDescription();
-            Object[][] testAgain = {{theFoodName,theFoodID,theFoodDescription}};
+            Object[][] testAgain = {{theFoodID, theFoodName,theFoodDescription}}; // this is only one row being rewritten
             testData = testAgain;
         }
         model = new DefaultTableModel(testData, columnNames);
