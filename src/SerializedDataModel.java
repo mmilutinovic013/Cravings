@@ -29,16 +29,31 @@ public class SerializedDataModel {
         return nextFoodNumber;
     }
     
+    public void setFoodList(FoodList newFoodList){
+        theFoodList = newFoodList;
+    }
+    
+    public FoodList getFoodList(){
+        if(theFoodList == null){
+            theFoodList = new FoodList();
+        }
+        return theFoodList;
+    }
+    
     public UserList getUserList(){
         return theUserList;
     }
     
-    public FoodList getFoodList(){
-        return theFoodList;
+    
+    public void setFoodGroupList(FoodGroupList newFoodGroupList){
+        theFoodGroupList = newFoodGroupList;
     }
     
     public FoodGroupList getFoodGroupList(){
-        return theFoodGroupList; // This sucks...
+        if(theFoodGroupList == null){
+            theFoodGroupList = new FoodGroupList();
+        }
+        return theFoodGroupList;
     }
     
     private void createTestSerializedDataModel(){

@@ -3,15 +3,18 @@
  * and open the template in the editor.
  */
 
+import java.io.*;
+
 /**
  *
- * @author SHaynes
- * This class manages all of the persistent data for the application
+ * Modified code from @author SHaynes
  */
 public class SerializedDataCntl {
     
     private SerializedDataModel theSerializedDataModel;
     private static SerializedDataCntl theSerializedDataCntl;
+    private final String EXTERNAL_DATA_PATH = "cravings_data/";
+    private final String CRAVINGS_DATA_FILE_NAME = "CravingsData.ser";
     
     //Private to prevent instantiation.
     private SerializedDataCntl(){
@@ -36,19 +39,52 @@ public class SerializedDataCntl {
         return theSerializedDataModel;
     }
     
-    // This method creates some test data if the serialized data model is null.
-    private void createTestSerializedDataModel(){
-        theSerializedDataModel = new SerializedDataModel();
-    }
-    protected void writeSerializedDataModel(){
-        
-    }
+     public void readSerializedDataModel(){
+        FileInputStream fis = null;
+        ObjectInputStream in = null;
+        String filePath = EXTERNAL_DATA_PATH+CRAVINGS_DATA_FILE_NAME;
+        try
+            {
+            fis = new FileInputStream(filePath);
+            in = new ObjectInputStream(fis);
+            theSerializedDataModel = (SerializedDataModel) in.readObject();
+            in.close();
+            }
+        catch(IOException ex)
+            {
+            ex.printStackTrace();
+            }
+        catch(ClassNotFoundException ex)
+            {
+            ex.printStackTrace();
+            }
+       }
+
     
-    protected void readSerializedDataModel(){
-        
-    }
+     public void writeSerializedDataModel(){
+        FileOutputStream fos = null;
+        ObjectOutputStream out = null;
+        String filePath = EXTERNAL_DATA_PATH+CRAVINGS_DATA_FILE_NAME;
+        try
+            {
+            fos = new FileOutputStream(filePath);
+            out = new ObjectOutputStream(fos);
+            out.writeObject(theSerializedDataModel);
+            out.close();
+            }
+        catch(IOException ex)
+            {
+            ex.printStackTrace();
+            }
+       }
+     
+     
+     public void testPrintSerializedDataModel(){
+         FoodGroupList testFGL = theSerializedDataModel.getFoodGroupList();
+         for(int i = 0; i < testFGL.getListOfFoodGroups().size(); i++){
+             String tempString = testFGL.getListOfFoodGroups().get(i).getFoodGroupDesc();
+             System.out.println(tempString);
+         }
+     }
     
-    protected void testPrintSerializedDataModel(){
-        
-    }
 }

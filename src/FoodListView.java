@@ -26,6 +26,8 @@ public class FoodListView extends JFrame implements Serializable {
     JButton backToMainButton = new JButton("Back to Main Menu!");
     Boolean saveItForLater = false;
     String[] columnNames = {"Food Name", "Food Description", "Favorited!"};
+    SerializedDataModel theSerializedDataModel = new SerializedDataModel();
+    
     Object[][] testData = {
         {"Ham", "It is really good ", saveItForLater}, // foodName, description, button
         {"Steak", "It is really good ", saveItForLater},
