@@ -33,7 +33,7 @@ public class FoodListView extends JFrame implements Serializable {
     DefaultTableModel model;
     protected JTable table;
     JButton createFoodButton = new JButton("Create New FSE!");
-
+    FoodController theFoodController = new FoodController();
 
     
     public FoodListView(FoodListController newFoodListController){
@@ -44,15 +44,15 @@ public class FoodListView extends JFrame implements Serializable {
     }
     public void initCustomComponents(){
         FoodList theFoodList = theSerializedDataModel.getFoodList();
-        for(int i = 0; i < FoodList.getListOfFoods().size(); i++){
-            String theFoodName = FoodList.getListOfFoods().get(i).getFoodName();
-            String theFoodID = FoodList.getListOfFoods().get(i).getFoodID();
-            String theFoodDescription = FoodList.getListOfFoods().get(i).getFoodDescription();
-            Object[][] testAgain = {{theFoodID, theFoodName,theFoodDescription}}; // this is only one row being rewritten
-            testData = testAgain;
-        }
-        model = new DefaultTableModel(testData, columnNames);
+       FoodTableModel theFoodTableModel = new FoodTableModel(theFoodController);
+       theFoodTableModel.buildTestFoodTable(1000);
+        //model = new DefaultTableModel(testData, columnNames);
+        
+        
+        
         table = new JTable(model);
+        
+        
        BorderLayout theBorderLayout = new BorderLayout();
        this.getContentPane().setLayout(theBorderLayout);
        // Define Layout = BorderLayout and set the ContentPane to be as such

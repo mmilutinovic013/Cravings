@@ -11,9 +11,7 @@ public class FoodController {
     
     Food theFood = new Food();
     
-    public FoodController(Food theFood2){
-        theFood = theFood2;
+    public FoodController(){
+      //  
     }
-
-    
 }
