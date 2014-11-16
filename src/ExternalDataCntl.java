@@ -27,7 +27,8 @@ public class ExternalDataCntl {
       
     public void getExternalFood(){
         getFoodGroup(); // make static so external data controller can get the list.  Translate code into string and make the data into string attribute of food
-        getFood(); // Figure this out
+        //getFood(); // Figure this out
+        getFoodDescription();
     }
     
     public void getFoodGroup(){
@@ -58,7 +59,35 @@ public class ExternalDataCntl {
         
     }
     
-        public void getFoodDescription(){
+    public void getFoodDescription(){
+        String filePath = EXTERNAL_DATA_PATH+FOOD_DESC_FILE_NAME;
+        File foodDescriptionFile = new File(filePath);
+        try{
+            Scanner in = new Scanner(foodDescriptionFile);
+            String nextLine = "";
+        
+            while(in.hasNextLine()){
+                nextLine = in.nextLine();
+                System.out.println(nextLine);
+                FoodGroup tmpFoodGroup = new FoodGroup(nextLine);
+                SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodGroupList().getListOfFoodGroups().add(tmpFoodGroup);
+            }
+            // Simply prints the size of the newly imported FoodGroupList
+            System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodGroupList().getListOfFoodGroups().size());
+            
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        // Write the newly imported FoodGroupList to disk.
+        SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
+        // Read it back in.
+        SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
+        // Test print to see if it worked.
+        SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
+        
+    }
+    
+      public void getFood(){
         String filePath = EXTERNAL_DATA_PATH+FOOD_DESC_FILE_NAME;
         File foodDescriptionFile = new File(filePath);
         try{
