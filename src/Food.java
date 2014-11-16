@@ -5,7 +5,7 @@ public class Food {
         protected String foodGroup;
 	protected String foodName;
 	private double price;
-	private int foodID;
+	private String foodID;
         private String foodDescription;
 	
 	public Food(){
@@ -37,7 +37,7 @@ public class Food {
 		return foodName;
 	}
         
-        public int getFoodID(){
+        public String getFoodID(){
             return foodID;
         }
         

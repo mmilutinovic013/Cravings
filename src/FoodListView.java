@@ -66,7 +66,11 @@ public class FoodListView extends JFrame implements Serializable {
     public void initCustomComponents(){
         FoodList theFoodList = theSerializedDataModel.getFoodList();
         for(int i = 0; i < FoodList.getListOfFoods().size(); i++){
-            testData = //get the infos out of this shit
+            String theFoodName = FoodList.getListOfFoods().get(i).getFoodName();
+            String theFoodID = FoodList.getListOfFoods().get(i).getFoodID();
+            String theFoodDescription = FoodList.getListOfFoods().get(i).getFoodDescription();
+            Object[][] testAgain = {{theFoodName,theFoodID,theFoodDescription}};
+            testData = testAgain;
         }
         model = new DefaultTableModel(testData, columnNames);
         table = new JTable(model);
