@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class FoodList {
+public class FoodList implements Serializable {
     private static ArrayList<Food> theListOfFoods = new ArrayList();
     
     public FoodList(){
