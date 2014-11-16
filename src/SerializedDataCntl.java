@@ -80,9 +80,9 @@ public class SerializedDataCntl {
      
      
      public void testPrintSerializedDataModel(){
-         FoodGroupList testFGL = theSerializedDataModel.getFoodGroupList();
-         for(int i = 0; i < testFGL.getListOfFoodGroups().size(); i++){
-             String tempString = testFGL.getListOfFoodGroups().get(i).getFoodGroupDesc();
+         FoodList testFoodList = theSerializedDataModel.getFoodList();
+         for(int i = 0; i < testFoodList.getListOfFoods().size(); i++){
+             String tempString = testFoodList.getListOfFoods().get(i).getFoodID();
              System.out.println(tempString);
          }
      }

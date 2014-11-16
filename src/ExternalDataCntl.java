@@ -27,8 +27,8 @@ public class ExternalDataCntl {
       
     public void getExternalFood(){
         getFoodGroup(); // make static so external data controller can get the list.  Translate code into string and make the data into string attribute of food
-        //getFood(); // Figure this out
-        getFoodDescription();
+        getFood(); // Figure this out
+        //getFoodDescription();
     }
     
     public void getFoodGroup(){
@@ -97,11 +97,11 @@ public class ExternalDataCntl {
             while(in.hasNextLine()){
                 nextLine = in.nextLine();
                 System.out.println(nextLine);
-                FoodGroup tmpFoodGroup = new FoodGroup(nextLine);
-                SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodGroupList().getListOfFoodGroups().add(tmpFoodGroup);
+                Food tempFood = new Food(nextLine);
+                SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().add(tempFood);
             }
             // Simply prints the size of the newly imported FoodGroupList
-            System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodGroupList().getListOfFoodGroups().size());
+            System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().size());
             
         }catch(Exception ex){
             ex.printStackTrace();
