@@ -2,6 +2,7 @@
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.io.Serializable;
+import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.*;
@@ -27,7 +28,6 @@ public class FoodListView extends JFrame implements Serializable {
     Boolean saveItForLater = false;
     String[] columnNames = {"Food Name", "Food Description", "Favorited!"};
     SerializedDataModel theSerializedDataModel = new SerializedDataModel();
-    
     Object[][] testData = {
         {"Ham", "It is really good ", saveItForLater}, // foodName, description, button
         {"Steak", "It is really good ", saveItForLater},
@@ -51,8 +51,8 @@ public class FoodListView extends JFrame implements Serializable {
         {"Lemons", "It is really good ", saveItForLater},
     };
     // DefaultTableModel model = new DefaultTableModel(testData, columnNames);
-    DefaultTableModel model = new DefaultTableModel(testData, columnNames);
-    protected JTable table = new JTable(model);
+    DefaultTableModel model;
+    protected JTable table;
     JButton createFoodButton = new JButton("Create New FSE!");
 
 
@@ -64,6 +64,12 @@ public class FoodListView extends JFrame implements Serializable {
         this.setLocationRelativeTo(null);
     }
     public void initCustomComponents(){
+        FoodList theFoodList = theSerializedDataModel.getFoodList();
+        for(int i = 0; i < FoodList.getListOfFoods().size(); i++){
+            testData = //get the infos out of this shit
+        }
+        model = new DefaultTableModel(testData, columnNames);
+        table = new JTable(model);
        BorderLayout theBorderLayout = new BorderLayout();
        this.getContentPane().setLayout(theBorderLayout);
        // Define Layout = BorderLayout and set the ContentPane to be as such
