@@ -144,6 +144,7 @@ public class LoginUI extends javax.swing.JFrame {
                 // Reset loginAttempts to 0
                 this.parentAuthenticationControler.resetLoginAttempts();
                 this.dispose();
+                ExternalDataCntl theExternalDataCntl = new ExternalDataCntl();
                 MainMenuController theMainMenuController = new MainMenuController();
             }
             else{

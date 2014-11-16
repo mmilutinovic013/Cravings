@@ -17,7 +17,7 @@ public class ExternalDataCntl {
     
     private final String EXTERNAL_DATA_PATH = "cravings_data/"; // because Macs
     private final String FOOD_GROUP_FILE_NAME = "FD_GROUP.TXT";
-    private final String FOOD_DESC_FILE_NAME = "FD_DESC.TXT";
+    private final String FOOD_DESC_FILE_NAME = "FOOD_DES.TXT";
     
     public ExternalDataCntl(){
         if(confirmImport()){
