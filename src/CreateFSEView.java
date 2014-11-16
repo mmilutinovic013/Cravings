@@ -63,5 +63,4 @@ public class CreateFSEView extends JFrame {
             MainMenuController theMainMenuController = new MainMenuController();
             this.dispose();
         }
-
     }

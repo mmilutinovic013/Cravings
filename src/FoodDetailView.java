@@ -55,11 +55,14 @@ public class FoodDetailView extends JFrame {
     JLabel theComboBoxLabel = new JLabel("My Food Group"); //Changeable because you can classify it yourself
     JLabel theImageLabel = new JLabel();
     JButton backToMain = new JButton("Back to Main Menu!");
+    JButton editButton = new JButton("Edit");
+    JButton deleteButton = new JButton("Delete");
+
         
     public FoodDetailView(FoodDetailController newFoodDetailController){
         parentFoodDetailController = newFoodDetailController;
         initCustomComponents();
-        this.setSize(640, 450);
+        this.setSize(800, 800);
         this.setResizable(true);
         this.setLocationRelativeTo(null);
     }
@@ -88,6 +91,8 @@ public class FoodDetailView extends JFrame {
         thePanel.add(theComboBoxLabel);
         thePanel.add(theFoodGroupComboBox);
         thePanel.add(backToMain);
+        thePanel.add(editButton);
+        thePanel.add(deleteButton);
         theFoodGroupComboBox.setSelectedIndex(0);
         theFoodGroupComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +102,16 @@ public class FoodDetailView extends JFrame {
          backToMain.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backToMainButtonActionPerformed(evt);
+            }
+        });
+         editButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editButtonActionPerformed(evt);
+            }
+        });
+         deleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteButtonActionPerformed(evt);
             }
         });
         this.getContentPane().add(thePanel);
@@ -111,6 +126,14 @@ public class FoodDetailView extends JFrame {
     
         private void backToMainButtonActionPerformed(ActionEvent e){
         MainMenuController theMainMenuController = new MainMenuController();
+        this.dispose();
+    }
+        private void editButtonActionPerformed(ActionEvent e){
+        //MainMenuController theMainMenuController = new MainMenuController();
+        this.dispose();
+    }
+        private void deleteButtonActionPerformed(ActionEvent e){
+        //MainMenuController theMainMenuController = new MainMenuController();
         this.dispose();
     }
     
