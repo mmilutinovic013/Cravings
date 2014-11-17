@@ -40,6 +40,7 @@ public class FoodListView extends JFrame implements Serializable {
     Object theFoodName;
     Object theFoodDescription;
     FoodTableModel theFoodTableModel;
+    FoodList theFoodList;
 
     
     public FoodListView(FoodListController newFoodListController){
@@ -49,7 +50,7 @@ public class FoodListView extends JFrame implements Serializable {
         this.setLocationRelativeTo(null);
     }
     public void initCustomComponents(){
-       FoodList theFoodList = theSerializedDataModel.getFoodList();
+        theFoodList = theSerializedDataModel.getFoodList();
        theFoodTableModel = new FoodTableModel(theFoodController);
        DefaultTableModel theDefaultTableModel = new DefaultTableModel(columnNames, 0); // This makes number of rows equal to 0
        for(int i = 0; i < theFoodList.getListOfFoods().size(); i++){
@@ -138,6 +139,7 @@ public class FoodListView extends JFrame implements Serializable {
     private void deleteFoodButtonActionPerformed(ActionEvent e){
         // Create new CreateFood window
         theFoodTableModel.deleteFood(table.getSelectedRow());
+        theSerializedDataModel.setFoodList(theFoodList);
         this.dispose();
         this.setVisible(false);
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();

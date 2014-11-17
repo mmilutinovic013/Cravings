@@ -22,6 +22,8 @@ public class ExternalDataCntl {
     public ExternalDataCntl(){
         if(confirmImport()){
             getExternalFood();
+        }else{
+            SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
         }
     }
       
@@ -127,5 +129,4 @@ public class ExternalDataCntl {
             }
             return importConfirmed;
     }
-    
 }

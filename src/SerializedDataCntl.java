@@ -79,7 +79,6 @@ public class SerializedDataCntl {
             }
        }
      
-     
      public void testPrintSerializedDataModel(){
          FoodList testFoodList = theSerializedDataModel.getFoodList();
          for(int i = 0; i < testFoodList.getListOfFoods().size(); i++){
