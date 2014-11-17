@@ -16,6 +16,5 @@ public class FoodDetailController {
     public void showMenu(){
         FoodDetailView theFoodDetailView = new FoodDetailView(this);
         theFoodDetailView.setVisible(true);
-        
     }
 }

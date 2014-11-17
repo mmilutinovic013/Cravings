@@ -88,6 +88,7 @@ public class ExternalDataCntl {
     }
     
       public void getFood(){
+        
         String filePath = EXTERNAL_DATA_PATH+FOOD_DESC_FILE_NAME;
         File foodDescriptionFile = new File(filePath);
         try{
@@ -112,7 +113,7 @@ public class ExternalDataCntl {
         SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
         // Test print to see if it worked.
         SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
-        
+       
     }
         
     public boolean confirmImport(){

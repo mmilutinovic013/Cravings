@@ -109,13 +109,13 @@ public class FoodTableModel extends AbstractTableModel{
     /*
      * Don't need to implement this method unless your table's
      * data can change.
-    
+     
     public void setValueAt(Object value, int row, int col) {
-        data[row][col] = value;
+        this[row][col] = value;
         fireTableCellUpdated(row, col);
     }
-    *  
-    */
+      */
+   
    
     
 }

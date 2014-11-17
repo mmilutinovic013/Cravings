@@ -93,7 +93,7 @@ public class FoodServingEstablishmentListView extends JFrame {
                 int col = table.columnAtPoint(evt.getPoint());
                 if (row >= 0 && col >= 0) {
                     //open food detail
-                    FoodDetailController theFoodDetailController = new FoodDetailController();
+                    //FoodDetailController theFoodDetailController = new FoodDetailController();
                     FoodServingEstablishmentListView.this.dispose();
                 }
             }

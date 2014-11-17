@@ -18,6 +18,9 @@ public class FoodDetailView extends JFrame {
     FoodDetailController parentFoodDetailController;
     JTextField theFoodName = new JTextField("The Food Name");  //This will get passed a parameter once models are enabled
     // The Description would also be passed in via models
+    Object theFoodIDObject;
+    Object theFoodNameObject;
+    Object theFoodDescriptionObject;
     String sampleText = 
         ("this is sample text"
             + "\n"
@@ -118,6 +121,15 @@ public class FoodDetailView extends JFrame {
         
         
     }
+        public void setFoodID(String newFoodID){
+            
+        } 
+        public void setFoodName(String newFoodName){
+            
+        }
+        public void setFoodDescription(String newFoodDescription){
+            
+        }
     
         private void theFoodGroupComboBoxActionPerformed(ActionEvent e){
         JComboBox cb = (JComboBox)e.getSource();

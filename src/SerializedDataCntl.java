@@ -32,6 +32,7 @@ public class SerializedDataCntl {
     // Returns the serialized data model
     // Creates test data if it is null
     public SerializedDataModel getSerializedDataModel(){
+        readSerializedDataModel();
         if(theSerializedDataModel == null){
             //readSerializedCollectionFile();
             theSerializedDataModel = new SerializedDataModel();
