@@ -16,7 +16,7 @@ import javax.swing.*;
  */
 public class FoodDetailView extends JFrame {
     FoodDetailController parentFoodDetailController;
-    JLabel theFoodName = new JLabel("The Food Name");  //This will get passed a parameter once models are enabled
+    JTextField theFoodName = new JTextField("The Food Name");  //This will get passed a parameter once models are enabled
     // The Description would also be passed in via models
     String sampleText = 
         ("this is sample text"
@@ -55,7 +55,7 @@ public class FoodDetailView extends JFrame {
     JLabel theComboBoxLabel = new JLabel("My Food Group"); //Changeable because you can classify it yourself
     JLabel theImageLabel = new JLabel();
     JButton backToMain = new JButton("Back to Main Menu!");
-    JButton editButton = new JButton("Edit");
+    JButton editButton = new JButton("Save Edits");
     JButton deleteButton = new JButton("Delete");
 
         

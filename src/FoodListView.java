@@ -26,15 +26,17 @@ public class FoodListView extends JFrame implements Serializable {
     FoodServingEstablishmentListController parentFoodEstablishmentController;
     JButton backToMainButton = new JButton("Back to Main Menu!");
     Boolean saveItForLater = false;
-    String[] columnNames = {"Food Name", "Food Description", "Favorited!"};
+    String[] columnNames = {"Food Number", "Food Name", "Food Description"};
     SerializedDataModel theSerializedDataModel = new SerializedDataModel();
-    Object[][] testData;
     // DefaultTableModel model = new DefaultTableModel(testData, columnNames);
     DefaultTableModel model;
     protected JTable table;
     protected JTable theFoodTable; // This will be based on the FoodTable Model
     JButton createFoodButton = new JButton("Create New FSE!");
     FoodController theFoodController = new FoodController();
+    Object theFoodID;
+    Object theFoodName;
+    Object theFoodDescription;
 
     
     public FoodListView(FoodListController newFoodListController){
@@ -48,9 +50,9 @@ public class FoodListView extends JFrame implements Serializable {
        FoodTableModel theFoodTableModel = new FoodTableModel(theFoodController);
        DefaultTableModel theDefaultTableModel = new DefaultTableModel(columnNames, 0); // This makes number of rows equal to 0
        for(int i = 0; i < theFoodList.getListOfFoods().size(); i++){
-            Object theFoodID = theFoodTableModel.getValueAt(i, 0);
-            Object theFoodName = theFoodTableModel.getValueAt(i, 1);
-            Object theFoodDescription = theFoodTableModel.getValueAt(i, 2);           
+             theFoodID = theFoodTableModel.getValueAt(i, 0);
+             theFoodName = theFoodTableModel.getValueAt(i, 1);
+             theFoodDescription = theFoodTableModel.getValueAt(i, 2);           
             Object[] theDataArray = {theFoodID, theFoodName,  theFoodDescription};
             theDefaultTableModel.addRow(theDataArray);
        }
@@ -84,6 +86,7 @@ public class FoodListView extends JFrame implements Serializable {
                 if (row >= 0 && col >= 0) {
                     //open food detail
                     FoodDetailController theFoodDetailController = new FoodDetailController();
+                    //theFoodDetailController.passVars(theFoodID,theFoodName,theFoodDescription);
                     FoodListView.this.dispose();
                 }
             }
