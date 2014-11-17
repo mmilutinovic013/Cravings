@@ -71,6 +71,7 @@ public class FoodTableModel extends AbstractTableModel{
         return this.foodTableData;
     }
     
+    /*
     public void buildTestFoodTable(int count){
         for(int i = 0; i < count; i++){
             //EssayFood newFood = new EssayFood(getNextFoodNumber(), Integer.parseInt(SwagDate.getSwagDate()), "Test Food "+i, "Test note "+i+" blah blah blah");
@@ -78,7 +79,7 @@ public class FoodTableModel extends AbstractTableModel{
             foodTableData.add(newFood);
         }
     }
-    
+    */
     public void changeFood(int selectedFood, Food theFoodToChange){
         foodTableData.set(selectedFood, theFoodToChange);
         this.fireTableDataChanged();

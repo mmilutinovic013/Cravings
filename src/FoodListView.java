@@ -32,6 +32,7 @@ public class FoodListView extends JFrame implements Serializable {
     // DefaultTableModel model = new DefaultTableModel(testData, columnNames);
     DefaultTableModel model;
     protected JTable table;
+    protected JTable theFoodTable; // This will be based on the FoodTable Model
     JButton createFoodButton = new JButton("Create New FSE!");
     FoodController theFoodController = new FoodController();
 
@@ -43,15 +44,20 @@ public class FoodListView extends JFrame implements Serializable {
         this.setLocationRelativeTo(null);
     }
     public void initCustomComponents(){
-        FoodList theFoodList = theSerializedDataModel.getFoodList();
+       FoodList theFoodList = theSerializedDataModel.getFoodList();
        FoodTableModel theFoodTableModel = new FoodTableModel(theFoodController);
-       theFoodTableModel.buildTestFoodTable(1000);
+       DefaultTableModel theDefaultTableModel = new DefaultTableModel(columnNames, 0); // This makes number of rows equal to 0
+       for(int i = 0; i < theFoodList.getListOfFoods().size(); i++){
+            Object theFoodID = theFoodTableModel.getValueAt(i, 0);
+            Object theFoodName = theFoodTableModel.getValueAt(i, 1);
+            Object theFoodDescription = theFoodTableModel.getValueAt(i, 2);           
+            Object[] theDataArray = {theFoodID, theFoodName,  theFoodDescription};
+            theDefaultTableModel.addRow(theDataArray);
+       }
+       //theFoodTableModel.buildTestFoodTable(1000);
         //model = new DefaultTableModel(testData, columnNames);
-        
-        
-        
-        table = new JTable(model);
-        
+
+        table = new JTable(theDefaultTableModel);
         
        BorderLayout theBorderLayout = new BorderLayout();
        this.getContentPane().setLayout(theBorderLayout);

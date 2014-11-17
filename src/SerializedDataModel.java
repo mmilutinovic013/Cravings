@@ -59,6 +59,7 @@ public class SerializedDataModel implements Serializable {
         return theFoodGroupList;
     }
     
+    
     private void createTestSerializedDataModel(){
         if(theFoodList == null){
             theFoodList = new FoodList();
@@ -68,5 +69,5 @@ public class SerializedDataModel implements Serializable {
             }
         }
     }    
-    
+   
 }
