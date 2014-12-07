@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author SHaynes
  */
-public class FoodTableModel extends AbstractTableModel{
+public class FoodTableModel extends AbstractTableModel {
     private FoodController theFoodController;
     private static String[] columnNames = {"ID", "Name", "Description"};
     private ArrayList<Food> foodTableData;
@@ -38,7 +38,7 @@ public class FoodTableModel extends AbstractTableModel{
     public Object getValueAt(int row, int col) {
         Object objectToReturn = new Object();
         switch(col){
-            case 0: objectToReturn = foodTableData.get(row).getFoodID();break;
+            case 0: objectToReturn = foodTableData.get(row).getFoodNumber();break;
             case 1: objectToReturn = foodTableData.get(row).getFoodName();break;
             case 2: objectToReturn = foodTableData.get(row).getFoodDescription();break;
         }

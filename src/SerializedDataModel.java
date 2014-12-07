@@ -14,7 +14,7 @@ public class SerializedDataModel implements Serializable {
     
     private UserList theUserList;
     private FoodList theFoodList;
-    private FoodGroupList theFoodGroupList; // unsure what is happening with this atm
+    private FoodGroupList theFoodGroupList;
     private long nextFoodNumber;
     
     
@@ -23,7 +23,12 @@ public class SerializedDataModel implements Serializable {
            nextFoodNumber = 1000;
        }
        if(theFoodList == null){
-           createTestSerializedDataModel();
+           //createTestSerializedDataModel();
+           theFoodList = new FoodList(); 
+       } 
+       if(theFoodGroupList == null){
+           //createTestSerializedDataModel();
+           theFoodGroupList = new FoodGroupList(); 
        } 
     }
     
@@ -32,21 +37,13 @@ public class SerializedDataModel implements Serializable {
         return nextFoodNumber;
     }
     
-    public void setFoodList(FoodList newFoodList){
-        theFoodList = newFoodList;
-    }
-    
-    public FoodList getFoodList(){
-        if(theFoodList == null){
-            theFoodList = new FoodList();
-        }
-        return theFoodList;
-    }
-    
     public UserList getUserList(){
         return theUserList;
     }
     
+    public FoodList getFoodList(){
+        return theFoodList;
+    }
     
     public void setFoodGroupList(FoodGroupList newFoodGroupList){
         theFoodGroupList = newFoodGroupList;
@@ -59,12 +56,11 @@ public class SerializedDataModel implements Serializable {
         return theFoodGroupList;
     }
     
-    
     private void createTestSerializedDataModel(){
         if(theFoodList == null){
             theFoodList = new FoodList();
             for(int i = 0; i < 100; i++){
-                Food tmpFood = new Food(i, "Test"+i, "Test"+i+" Description");
+                Food tmpFood = new Food(String.valueOf(i), "Test"+i, "Test"+i+" Description");
                 theFoodList.getListOfFoods().add(tmpFood);
             }
         }

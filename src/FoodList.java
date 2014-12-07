@@ -7,16 +7,14 @@
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class FoodList implements Serializable {
-    private static ArrayList<Food> theListOfFoods = new ArrayList();
+public class FoodList implements Serializable{
+    
+    private ArrayList<Food> theListOfFoods = new ArrayList();
     
     public FoodList(){
-        for (int i = 0; i < 100; i++) {
-            // load Foods (from serialized stuffs)?
-        }
+     
     }
-    
-    public static ArrayList<Food> getListOfFoods(){
+    public ArrayList<Food> getListOfFoods(){
         return theListOfFoods;
-    }
+    }   
 }

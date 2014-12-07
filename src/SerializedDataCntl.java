@@ -13,8 +13,9 @@ public class SerializedDataCntl {
     
     private SerializedDataModel theSerializedDataModel;
     private static SerializedDataCntl theSerializedDataCntl;
-    private final String EXTERNAL_DATA_PATH = "cravings_data/";
+    private final String EXTERNAL_DATA_PATH = "cravings_data\\";
     private final String CRAVINGS_DATA_FILE_NAME = "CravingsData.ser";
+    private ExternalDataCntl theExtenalDataCntl;
     
     //Private to prevent instantiation.
     private SerializedDataCntl(){
@@ -32,10 +33,11 @@ public class SerializedDataCntl {
     // Returns the serialized data model
     // Creates test data if it is null
     public SerializedDataModel getSerializedDataModel(){
-        readSerializedDataModel();
         if(theSerializedDataModel == null){
-            //readSerializedCollectionFile();
-            theSerializedDataModel = new SerializedDataModel();
+            readSerializedDataModel();
+            if(theSerializedDataModel == null){
+                theSerializedDataModel = new SerializedDataModel();
+            }
         }
         return theSerializedDataModel;
     }
@@ -86,5 +88,11 @@ public class SerializedDataCntl {
              System.out.println(tempString);
          }
      }
+     public void getExtenalDataCntl(){
+        theExtenalDataCntl = new ExternalDataCntl();
+    }
+     private void createTestSerializedDataModel(){
+        theSerializedDataModel = new SerializedDataModel();
+    }
     
 }

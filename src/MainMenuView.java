@@ -69,7 +69,7 @@ public class MainMenuView extends JFrame {
     }
     
     private void foodListButtonActionPerformed(ActionEvent e){
-        FoodListController theFoodListController = new FoodListController(theMainMenuController);
+        FoodController theFoodController = new FoodController(theMainMenuController);
         this.dispose();
     }
     

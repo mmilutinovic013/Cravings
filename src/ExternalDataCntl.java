@@ -15,15 +15,21 @@ import javax.swing.JOptionPane;
  */
 public class ExternalDataCntl {
     
-    private final String EXTERNAL_DATA_PATH = "cravings_data/"; // because Macs
+    private final String EXTERNAL_DATA_PATH = "cravings_data/";
     private final String FOOD_GROUP_FILE_NAME = "FD_GROUP.TXT";
     private final String FOOD_DESC_FILE_NAME = "FOOD_DES.TXT";
+    MainMenuController theMainMenuCntl;
+    
+    public ExternalDataCntl(MainMenuController parentMainMenuCntl){
+        theMainMenuCntl = parentMainMenuCntl;
+        if(confirmImport()){
+            getExternalFood();
+        }
+    }
     
     public ExternalDataCntl(){
         if(confirmImport()){
             getExternalFood();
-        }else{
-            SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
         }
     }
       
@@ -42,7 +48,7 @@ public class ExternalDataCntl {
         
             while(in.hasNextLine()){
                 nextLine = in.nextLine();
-                System.out.println(nextLine);
+                //System.out.println(nextLine);
                 FoodGroup tmpFoodGroup = new FoodGroup(nextLine);
                 SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodGroupList().getListOfFoodGroups().add(tmpFoodGroup);
             }
@@ -57,7 +63,7 @@ public class ExternalDataCntl {
         // Read it back in.
         SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
         // Test print to see if it worked.
-        SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
+        //SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
         
     }
     
@@ -90,18 +96,17 @@ public class ExternalDataCntl {
     }
     
       public void getFood(){
-        
         String filePath = EXTERNAL_DATA_PATH+FOOD_DESC_FILE_NAME;
-        File foodDescriptionFile = new File(filePath);
+        File foodFile = new File(filePath);
         try{
-            Scanner in = new Scanner(foodDescriptionFile);
+            Scanner in = new Scanner(foodFile);
             String nextLine = "";
         
             while(in.hasNextLine()){
                 nextLine = in.nextLine();
-                System.out.println(nextLine);
-                Food tempFood = new Food(nextLine);
-                SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().add(tempFood);
+                //System.out.println(nextLine);
+                Food tmpFood = new Food(nextLine);
+                SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().add(tmpFood);
             }
             // Simply prints the size of the newly imported FoodGroupList
             System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().size());
@@ -115,7 +120,7 @@ public class ExternalDataCntl {
         SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
         // Test print to see if it worked.
         SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
-       
+        
     }
         
     public boolean confirmImport(){

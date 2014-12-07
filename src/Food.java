@@ -1,62 +1,106 @@
 
-public class Food {
+import java.io.Serializable;
+
+
+public class Food implements Serializable{
 	
-        protected int foodNumber;
-        protected String foodGroup;
-	protected String foodName;
-	private double price;
-	private String foodID;
-        private String foodDescription;
+    private String foodNumber;
+    protected String foodName;
+    private String foodDescription;
+    private String foodGroup;
+    private boolean vegetarian;
+    private boolean vegan;
+    private boolean glutenFree;
+    private String foodGenre;
+    private double price;
+    private int calories;
 	
 	public Food(){
 		
 	}
         
-      public Food(String importString){
+      public Food(String importFoodString){
         String delimiter = "~";
-        String[] tokens = importString.split(delimiter);
-        foodID = tokens[1]; // From the file format at the FDA site position 1 is the code.        
-        foodGroup = tokens[3]; // From the file format at the FDA site position 3 is the food group.
-        foodDescription = tokens[5]; // From the file format at the FDA site position 7 is the description. 
-        foodName = tokens[7]; // Assuming this is the FoodName
-
+        String[] tempFoodArray = importFoodString.split(delimiter);
+        this.foodNumber = tempFoodArray[1];
+        this.foodGroup = tempFoodArray[3];
+        this.foodDescription = tempFoodArray[7];
+        this.foodName = tempFoodArray[5];
+    }
+    
+    public Food(String newFoodNumber, String newFoodName, String newFoodDescription){
+        this.foodNumber = newFoodNumber;
+        this.foodName = newFoodName;
+        this.foodDescription = newFoodDescription;
+        this.foodGroup = "Fruit";
+        this.vegetarian = true;
+        this.vegan = true;
+        this.glutenFree = true;
+        this.foodGenre = "American";
+    }
+    
+    public void setFoodNumber(String newFoodNumber){
+        foodNumber = newFoodNumber;
+    }
+    
+    public void setFoodName(String newFoodName){
+        foodName = newFoodName;
+    }
+    
+    public void setFoodDescription(String newFoodDescription){
+        foodDescription = newFoodDescription;
+    }
+    
+    
+    public String getFoodNumber(){
+        return foodNumber;
+    }
+    
+    public String getFoodName(){
+        return foodName;
+    }
+    
+    public String getFoodDescription(){
+        return foodDescription;
+    }
+    
+    public String getFoodGroup(){
+        return foodGroup;
     }
         
-        public Food(int newFoodNumber,String newFoodGroup, String newDescription){
-		//this.foodName = newFoodName;  // Don't need this because name doesn't seem important
-                this.foodDescription = newDescription;
-                this.foodGroup = newFoodGroup;
-                this.foodNumber = newFoodNumber;
-                
-	}
-	
-	public String toString(){
-		return this.foodName;
-	}
-	
-	public boolean equals(Object otherFood){
-		return this.toString().equals(otherFood.toString());
-		
-	}
-	
-	public String getFoodName(){
-		return foodName;
-	}
+    public boolean getVegetarian(){
+        return vegetarian;
+    }
+    
+    public boolean getVegan(){
+        return vegan;
+    }
         
-        public String getFoodID(){
-            return foodID;
-        }
-        
-        public String getFoodDescription(){
-            return foodDescription;
-        }
-        
-        public String getFoodGroup(){
-            return foodGroup;
-        }
-        
-        
-	
-	//public abstract double getSize(); //basically all subclasses have this method defined in it.
+    public boolean getGlutenFree(){
+        return glutenFree;
+    }
+            
+    
+    public String getFoodGenre(){
+        return foodGenre;
+    }
+            
+
+    //public  double getSize();
+    
+    public String toString(){
+        return this.foodName;
+    }
+    
+    public boolean equals(Object otherFood){
+        return this.toString().equals(otherFood.toString());
+    }
+    
+    public int compareTo(Object otherFood){
+        int result = -1;
+        Food foodToCompare = (Food) otherFood;
+        result = this.foodName.compareTo(foodToCompare.foodName);
+        return result;
+    }
 
 }
