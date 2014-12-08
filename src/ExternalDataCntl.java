@@ -18,6 +18,7 @@ public class ExternalDataCntl {
     private final String EXTERNAL_DATA_PATH = "cravings_data/";
     private final String FOOD_GROUP_FILE_NAME = "FD_GROUP.TXT";
     private final String FOOD_DESC_FILE_NAME = "FOOD_DES.TXT";
+    private final String FSE_FILE_NAME = "FSEStateCollege.TXT";
     MainMenuController theMainMenuCntl;
     
     public ExternalDataCntl(MainMenuController parentMainMenuCntl){
@@ -125,7 +126,7 @@ public class ExternalDataCntl {
         
     public boolean confirmImport(){
             boolean importConfirmed = false;
-            String message = "Are you sure you want to import foods?";
+            String message = "Are you sure you want to import foods and FSEs?";
             String title = "Import Foods";
             // display the JOptionPane showConfirmDialog
             int result = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);

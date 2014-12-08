@@ -17,7 +17,7 @@ import javax.swing.border.TitledBorder;
 
 /**
  *
- * @author markymark1346
+ * @author markymark1346 implements code from Professor Haynes with edits
  */
 public class FoodDetailView extends JFrame {
     FoodController theFoodCntl;

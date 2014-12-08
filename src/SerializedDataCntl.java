@@ -13,7 +13,7 @@ public class SerializedDataCntl {
     
     private SerializedDataModel theSerializedDataModel;
     private static SerializedDataCntl theSerializedDataCntl;
-    private final String EXTERNAL_DATA_PATH = "cravings_data\\";
+    private final String EXTERNAL_DATA_PATH = "cravings_data/";
     private final String CRAVINGS_DATA_FILE_NAME = "CravingsData.ser";
     private ExternalDataCntl theExtenalDataCntl;
     
