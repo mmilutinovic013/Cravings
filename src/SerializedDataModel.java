@@ -15,6 +15,7 @@ public class SerializedDataModel implements Serializable {
     private UserList theUserList;
     private FoodList theFoodList;
     private FoodGroupList theFoodGroupList;
+    private FSEList theFSEList;
     private long nextFoodNumber;
     
     
@@ -30,6 +31,9 @@ public class SerializedDataModel implements Serializable {
            //createTestSerializedDataModel();
            theFoodGroupList = new FoodGroupList(); 
        } 
+       if(theFSEList == null){
+           theFSEList = new FSEList();
+       }
     }
     
     public long getNextFoodNumber(){
@@ -47,6 +51,10 @@ public class SerializedDataModel implements Serializable {
     
     public void setFoodGroupList(FoodGroupList newFoodGroupList){
         theFoodGroupList = newFoodGroupList;
+    }
+    
+    public FSEList getFSEList(){
+        return theFSEList;
     }
     
     public FoodGroupList getFoodGroupList(){

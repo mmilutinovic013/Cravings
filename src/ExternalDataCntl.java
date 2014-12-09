@@ -132,21 +132,13 @@ public class ExternalDataCntl {
             String nextLine = "";
         
             while(in.hasNextLine()){
-                int count = 1;
                 nextLine = in.nextLine();
                 //System.out.println(nextLine);
-                if(count%2 != 0){
-                    Food tmpFood = new Food(nextLine);
-                    SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().add(tmpFood);
-                }
-                else{
-                    // Add the address attribute to the FSE 
-                }
-               
-                count++;
+                FSE tmpFSE = new FSE(nextLine);
+                SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFSEList().getListOfFSE().add(tmpFSE);
             }
             // Simply prints the size of the newly imported FoodGroupList
-            System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().size());
+            System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFSEList().getListOfFSE().size());
             
         }catch(Exception ex){
             ex.printStackTrace();

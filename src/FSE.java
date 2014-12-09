@@ -1,3 +1,6 @@
+
+import java.io.Serializable;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -7,7 +10,7 @@
  *
  * @author markymark1346
  */
-public class FSE {
+public class FSE implements Serializable {
     private String fseNumber;
     protected String fseName;
     private String fseAddress;
