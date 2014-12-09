@@ -39,13 +39,13 @@ public class FSEController {
         return theFoodTableModel.getFood(foodToGet);
     }
     
-    public void addFSE(Food theNewFood){
-        theFoodTableModel.addFood(theNewFood);
+    public void addFSE(FSE theNewFSE){
+        theFoodTableModel.addFood(theNewFSE); // add the FSE Table Model
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
     }
     
    public void changeFSE(int selectedRow, FSE theFSEToChange){
-        theFoodTableModel.changeFood(selectedRow, theFSEToChange);
+        theFoodTableModel.changeFood(selectedRow, theFSEToChange); // change to FSE table model
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
     }
    

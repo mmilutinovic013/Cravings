@@ -179,9 +179,9 @@ public class FSEDetailView extends JFrame {
     
         // This is for reading and updating existing notes...
     public void initCurrentFood(){
-        this.foodNumber.setText(theCurrentFSE.getFoodNumber());
-        this.foodName.setText(theCurrentFSE.getFoodName());
-        this.foodDescription.setText(theCurrentFSE.getFoodDescription());   
+        this.foodNumber.setText(theCurrentFSE.getFSENumber());
+        this.foodName.setText(theCurrentFSE.getFSEName());
+        this.foodDescription.setText(theCurrentFSE.getFSEDescription());   
         this.isVegetarian.setSelected(theCurrentFSE.getVegetarian());
         this.isVegan.setSelected(theCurrentFSE.getVegan());
         this.isGlutenFree.setSelected(theCurrentFSE.getGlutenFree());
@@ -206,9 +206,9 @@ public class FSEDetailView extends JFrame {
                     String newFoodName = FSEDetailView.this.foodName.getText();
                     String newFoodDescription = FSEDetailView.this.foodDescription.getText();
 
-                    FSEDetailView.this.theCurrentFSE = new Food(newFoodNumber, newFoodName, newFoodDescription);
+                    FSEDetailView.this.theCurrentFSE = new FSE(newFoodNumber, newFoodName, newFoodDescription); // Change these values
 
-                    FSEDetailView.this.theFSECntl.addFood(theCurrentFSE);
+                    FSEDetailView.this.theFSECntl.addFSE(theCurrentFSE); // add FSE
                     
                     FSEDetailView.this.setVisible(false);
                     FSEDetailView.this.dispose();
