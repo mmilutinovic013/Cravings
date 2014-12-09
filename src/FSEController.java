@@ -44,8 +44,8 @@ public class FSEController {
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
     }
     
-   public void changeFSE(int selectedRow, Food theFoodToChange){
-        theFoodTableModel.changeFood(selectedRow, theFoodToChange);
+   public void changeFSE(int selectedRow, FSE theFSEToChange){
+        theFoodTableModel.changeFood(selectedRow, theFSEToChange);
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
     }
    

@@ -29,7 +29,7 @@ import javax.swing.border.TitledBorder;
 public class FSEDetailView extends JFrame {
     FoodController theFSECntl;
     int selectedRow; //For edit of a row selected in the FoodTableUI
-    Food theCurrentFood;
+    FSE theCurrentFSE;
     
     JPanel buttonPanel;
     JPanel topFieldPanel;
@@ -68,10 +68,10 @@ public class FSEDetailView extends JFrame {
     JPanel foodGenrePanel;
     JComboBox foodGenreCombo;
     
-    public FSEDetailView(FoodController parentFoodCntl, int theSelectedRow, Food theSelectedFood){
+    public FSEDetailView(FoodController parentFoodCntl, int theSelectedRow, FSE theSelectedFSE){
         theFSECntl = parentFoodCntl;
         selectedRow = theSelectedRow;
-        theCurrentFood = theSelectedFood;
+        theCurrentFSE = theSelectedFSE;
         this.initComponents();
         this.setSize(400, 500);
         this.setLocationRelativeTo(null);
@@ -90,7 +90,7 @@ public class FSEDetailView extends JFrame {
         saveButton.addActionListener(new FSEDetailView.SaveButtonListener());
         deleteButton = new JButton("Delete");
         deleteButton.addActionListener(new FSEDetailView.DeleteButtonListener());
-        if(theCurrentFood == null)deleteButton.setEnabled(false);
+        if(theCurrentFSE == null)deleteButton.setEnabled(false);
         
         buttonPanel.add(backButton);
         buttonPanel.add(deleteButton);
@@ -172,27 +172,27 @@ public class FSEDetailView extends JFrame {
         this.getContentPane().add(topFieldPanel, BorderLayout.CENTER);
         this.getContentPane().add(widgetAreaPanel, BorderLayout.SOUTH);
         
-        if(theCurrentFood != null){
+        if(theCurrentFSE != null){
             initCurrentFood();
         }
     }
     
         // This is for reading and updating existing notes...
     public void initCurrentFood(){
-        this.foodNumber.setText(theCurrentFood.getFoodNumber());
-        this.foodName.setText(theCurrentFood.getFoodName());
-        this.foodDescription.setText(theCurrentFood.getFoodDescription());   
-        this.isVegetarian.setSelected(theCurrentFood.getVegetarian());
-        this.isVegan.setSelected(theCurrentFood.getVegan());
-        this.isGlutenFree.setSelected(theCurrentFood.getGlutenFree());
-        this.meatButton.setSelected(this.meatButton.getText().equals(theCurrentFood.getFoodGroup()));
-        this.diaryButton.setSelected(this.diaryButton.getText().equals(theCurrentFood.getFoodGroup()));
-        this.vegButton.setSelected(this.vegButton.getText().equals(theCurrentFood.getFoodGroup()));
-        this.grainButton.setSelected(this.grainButton.getText().equals(theCurrentFood.getFoodGroup()));
-        this.fruitButton.setSelected(this.fruitButton.getText().equals(theCurrentFood.getFoodGroup()));
+        this.foodNumber.setText(theCurrentFSE.getFoodNumber());
+        this.foodName.setText(theCurrentFSE.getFoodName());
+        this.foodDescription.setText(theCurrentFSE.getFoodDescription());   
+        this.isVegetarian.setSelected(theCurrentFSE.getVegetarian());
+        this.isVegan.setSelected(theCurrentFSE.getVegan());
+        this.isGlutenFree.setSelected(theCurrentFSE.getGlutenFree());
+        this.meatButton.setSelected(this.meatButton.getText().equals(theCurrentFSE.getFoodGroup()));
+        this.diaryButton.setSelected(this.diaryButton.getText().equals(theCurrentFSE.getFoodGroup()));
+        this.vegButton.setSelected(this.vegButton.getText().equals(theCurrentFSE.getFoodGroup()));
+        this.grainButton.setSelected(this.grainButton.getText().equals(theCurrentFSE.getFoodGroup()));
+        this.fruitButton.setSelected(this.fruitButton.getText().equals(theCurrentFSE.getFoodGroup()));
         for(int i = 0; i < foodGenreCombo.getItemCount(); i++){
             String tempFoodGenre = (String)foodGenreCombo.getItemAt(i);
-            if(tempFoodGenre.equals(theCurrentFood.getFoodGenre())){
+            if(tempFoodGenre.equals(theCurrentFSE.getFoodGenre())){
                 foodGenreCombo.setSelectedIndex(i);
             }
         }
@@ -201,25 +201,25 @@ public class FSEDetailView extends JFrame {
         public class SaveButtonListener implements ActionListener{
             public void actionPerformed(ActionEvent evt){
                 // If it's a new Food
-                if(theCurrentFood == null){               
+                if(theCurrentFSE == null){               
                     String newFoodNumber = FSEDetailView.this.foodNumber.getText();
                     String newFoodName = FSEDetailView.this.foodName.getText();
                     String newFoodDescription = FSEDetailView.this.foodDescription.getText();
 
-                    FSEDetailView.this.theCurrentFood = new Food(newFoodNumber, newFoodName, newFoodDescription);
+                    FSEDetailView.this.theCurrentFSE = new Food(newFoodNumber, newFoodName, newFoodDescription);
 
-                    FSEDetailView.this.theFSECntl.addFood(theCurrentFood);
+                    FSEDetailView.this.theFSECntl.addFood(theCurrentFSE);
                     
                     FSEDetailView.this.setVisible(false);
                     FSEDetailView.this.dispose();
                     FSEDetailView.this.theFSECntl.showFoodListUI();
 
                 }else{ //If it's a Food being edited...
-                    FSEDetailView.this.theCurrentFood.setFoodNumber(FSEDetailView.this.foodNumber.getText());;
-                    FSEDetailView.this.theCurrentFood.setFoodName(FSEDetailView.this.foodName.getText());
-                    FSEDetailView.this.theCurrentFood.setFoodDescription(FSEDetailView.this.foodDescription.getText());
+                    FSEDetailView.this.theCurrentFSE.setFoodNumber(FSEDetailView.this.foodNumber.getText());;
+                    FSEDetailView.this.theCurrentFSE.setFoodName(FSEDetailView.this.foodName.getText());
+                    FSEDetailView.this.theCurrentFSE.setFoodDescription(FSEDetailView.this.foodDescription.getText());
                 
-                    FSEDetailView.this.theFSECntl.changeFood(selectedRow, theCurrentFood);
+                    FSEDetailView.this.theFSECntl.changeFSE(selectedRow, theCurrentFSE);
                 
                     FSEDetailView.this.setVisible(false);
                     FSEDetailView.this.dispose();
