@@ -8,9 +8,9 @@
  * @author markymark1346
  */
 public class FSE {
-        private String fseNumber;
+    private String fseNumber;
     protected String fseName;
-    private String fseDescription;
+    private String fseAddress;
     private String fseGroup;
     private boolean vegetarian;
     private boolean vegan;
@@ -26,16 +26,14 @@ public class FSE {
       public FSE(String importFoodString){
         String delimiter = "~";
         String[] tempFoodArray = importFoodString.split(delimiter);
-        this.fseNumber = tempFoodArray[1];
-        this.fseGroup = tempFoodArray[3];
-        this.fseDescription = tempFoodArray[7];
-        this.fseName = tempFoodArray[5];
+        this.fseName = tempFoodArray[1];
+        this.fseAddress = tempFoodArray[3];
     }
     
     public FSE(String newFoodNumber, String newFoodName, String newFoodDescription){
         this.fseNumber = newFoodNumber;
         this.fseName = newFoodName;
-        this.fseDescription = newFoodDescription;
+        this.fseAddress = newFoodDescription;
         this.fseGroup = "Fruit";
         this.vegetarian = true;
         this.vegan = true;
@@ -51,8 +49,8 @@ public class FSE {
         fseName = newFoodName;
     }
     
-    public void setFSEDescription(String newFoodDescription){
-        fseDescription = newFoodDescription;
+    public void setFSEAddress(String newFoodAddress){
+        fseAddress = newFoodAddress;
     }
     
     
@@ -65,7 +63,7 @@ public class FSE {
     }
     
     public String getFSEDescription(){
-        return fseDescription;
+        return fseAddress;
     }
     
     public String getFSEGroup(){
