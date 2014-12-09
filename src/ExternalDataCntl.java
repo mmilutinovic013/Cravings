@@ -123,6 +123,42 @@ public class ExternalDataCntl {
         SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
         
     }
+      
+      public void getFSE(){
+        String filePath = EXTERNAL_DATA_PATH+FSE_FILE_NAME;
+        File foodFile = new File(filePath);
+        try{
+            Scanner in = new Scanner(foodFile);
+            String nextLine = "";
+        
+            while(in.hasNextLine()){
+                int count = 1;
+                nextLine = in.nextLine();
+                //System.out.println(nextLine);
+                if(count%2 != 0){
+                    Food tmpFood = new Food(nextLine);
+                    SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().add(tmpFood);
+                }
+                else{
+                    // Add the address attribute to the FSE 
+                }
+               
+                count++;
+            }
+            // Simply prints the size of the newly imported FoodGroupList
+            System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods().size());
+            
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        // Write the newly imported FoodGroupList to disk.
+        SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
+        // Read it back in.
+        SerializedDataCntl.getSerializedDataCntl().readSerializedDataModel();
+        // Test print to see if it worked.
+        SerializedDataCntl.getSerializedDataCntl().testPrintSerializedDataModel();
+        
+    }
         
     public boolean confirmImport(){
             boolean importConfirmed = false;
