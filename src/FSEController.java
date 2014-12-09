@@ -9,8 +9,8 @@
  */
 public class FSEController {
     private MainMenuController parentMainMenuCntl;
-    private FoodListView theFoodListUI;
-    private FoodDetailView theFoodDetailUI;
+    private FoodListView theFSEListUI;
+    private FSEDetailView theFSEDetailUI;
     private FoodTableModel theFoodTableModel;
     
     public FSEController(MainMenuController theMainMenuCntl){
@@ -18,7 +18,7 @@ public class FSEController {
         showFSEListUI();
     }
     
-    public FSETableModel getFoodTableModel(){
+    public FSETableModel getFoodTableModel(){ // Write this class...wooo!
         if(theFoodTableModel == null){
             theFoodTableModel = new FoodTableModel(this);
         }
@@ -26,13 +26,13 @@ public class FSEController {
     }
     
     public void showFSEDetailUI(int selectedRow, Food theFood){
-        theFoodDetailUI = new FoodDetailView(this, selectedRow, theFood);
-        theFoodDetailUI.setVisible(true);
+        theFSEDetailUI = new FSEDetailView(this, selectedRow, theFood); // figure this out
+        theFSEDetailUI.setVisible(true);
     }
     
     public void showFSEListUI(){
-        theFoodListUI = new FoodListView(this);
-        theFoodListUI.setVisible(true);
+        theFSEListUI = new FSEListView(this);
+        theFSEListUI.setVisible(true);
     }
     
     public Food getFSE(int foodToGet){

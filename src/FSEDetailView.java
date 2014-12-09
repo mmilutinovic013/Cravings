@@ -27,7 +27,7 @@ import javax.swing.border.TitledBorder;
  * @author markymark1346
  */
 public class FSEDetailView extends JFrame {
-    FoodController theFoodCntl;
+    FoodController theFSECntl;
     int selectedRow; //For edit of a row selected in the FoodTableUI
     Food theCurrentFood;
     
@@ -69,7 +69,7 @@ public class FSEDetailView extends JFrame {
     JComboBox foodGenreCombo;
     
     public FSEDetailView(FoodController parentFoodCntl, int theSelectedRow, Food theSelectedFood){
-        theFoodCntl = parentFoodCntl;
+        theFSECntl = parentFoodCntl;
         selectedRow = theSelectedRow;
         theCurrentFood = theSelectedFood;
         this.initComponents();
@@ -208,22 +208,22 @@ public class FSEDetailView extends JFrame {
 
                     FSEDetailView.this.theCurrentFood = new Food(newFoodNumber, newFoodName, newFoodDescription);
 
-                    FSEDetailView.this.theFoodCntl.addFood(theCurrentFood);
+                    FSEDetailView.this.theFSECntl.addFood(theCurrentFood);
                     
                     FSEDetailView.this.setVisible(false);
                     FSEDetailView.this.dispose();
-                    FSEDetailView.this.theFoodCntl.showFoodListUI();
+                    FSEDetailView.this.theFSECntl.showFoodListUI();
 
                 }else{ //If it's a Food being edited...
                     FSEDetailView.this.theCurrentFood.setFoodNumber(FSEDetailView.this.foodNumber.getText());;
                     FSEDetailView.this.theCurrentFood.setFoodName(FSEDetailView.this.foodName.getText());
                     FSEDetailView.this.theCurrentFood.setFoodDescription(FSEDetailView.this.foodDescription.getText());
                 
-                    FSEDetailView.this.theFoodCntl.changeFood(selectedRow, theCurrentFood);
+                    FSEDetailView.this.theFSECntl.changeFood(selectedRow, theCurrentFood);
                 
                     FSEDetailView.this.setVisible(false);
                     FSEDetailView.this.dispose();
-                    FSEDetailView.this.theFoodCntl.showFoodListUI();
+                    FSEDetailView.this.theFSECntl.showFoodListUI();
                 }
             }
         }
@@ -232,16 +232,16 @@ public class FSEDetailView extends JFrame {
         public void actionPerformed(ActionEvent evt){
                 FSEDetailView.this.dispose();
                 FSEDetailView.this.setVisible(false);
-                FSEDetailView.this.theFoodCntl.showFoodListUI();
+                FSEDetailView.this.theFSECntl.showFoodListUI();
         }
     }
     
     public class DeleteButtonListener implements ActionListener{
         public void actionPerformed(ActionEvent evt){
-                FSEDetailView.this.theFoodCntl.deleteFood(selectedRow);
+                FSEDetailView.this.theFSECntl.deleteFood(selectedRow);
                 FSEDetailView.this.dispose();
                 FSEDetailView.this.setVisible(false);
-                FSEDetailView.this.theFoodCntl.showFoodListUI();
+                FSEDetailView.this.theFSECntl.showFoodListUI();
         }
     }
         
