@@ -1,5 +1,6 @@
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /*
  * To change this template, choose Tools | Templates
@@ -16,6 +17,7 @@ public class SerializedDataModel implements Serializable {
     private FoodList theFoodList;
     private FoodGroupList theFoodGroupList;
     private FSEList theFSEList;
+    private ArrayList<Food> theFSEMenu = new ArrayList();
     private long nextFoodNumber;
     private long nextFSENumber;
     
@@ -68,6 +70,22 @@ public class SerializedDataModel implements Serializable {
             theFoodGroupList = new FoodGroupList();
         }
         return theFoodGroupList;
+    }
+    
+    public ArrayList<Food> buildFSEMenu(){
+        for(int i = 0; i < 10; i++){
+            int foodNumber = (int)(Math.random() * theFSEMenu.size());
+            theFSEMenu.add(theFoodList.getListOfFoods().get(foodNumber));
+        }
+        return theFSEMenu;
+    }
+    
+    public ArrayList<Food> getFSEMenu(){
+        return theFSEMenu;
+    }
+    
+    public void setFSEMenu(ArrayList<Food> newFSEMenu){
+        theFSEMenu = newFSEMenu;
     }
     
     private void createTestSerializedDataModel(){

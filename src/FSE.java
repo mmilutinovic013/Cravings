@@ -23,6 +23,12 @@ public class FSE implements Serializable {
     private String fseGenre;
     private double price;
     private int calories;
+    //
+    // probably a really bad idea...
+    //
+    //
+    // end probably really bad idea...
+    //
     private ArrayList<Food>fseMenu = new ArrayList();
     
 	public FSE(){
