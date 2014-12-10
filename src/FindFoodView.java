@@ -3,6 +3,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 import javax.swing.ButtonGroup;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
@@ -22,10 +23,9 @@ public class FindFoodView extends JFrame {
     
     // Declare variables
     //MainMenuController theMainMenuController;
+    ArrayList<FSE> theFSEList = SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFSEList().getListOfFSE();
     JTextField theTextBox = new JTextField();
     
-    JRadioButton searchByFoodServingEstablishment = new JRadioButton("Search by Establishment");
-    JRadioButton searchByName = new JRadioButton("Search by Name");
     ButtonGroup theButtonGroup = new ButtonGroup();
         
     FindFoodController parentFindFoodController;
@@ -39,7 +39,7 @@ public class FindFoodView extends JFrame {
         parentFindFoodController = newFindFoodController;
         initCustomComponents();
         this.getContentPane().add(theJPanel);
-        this.setSize(800, 100);
+        this.setSize(800, 75);
         this.setLocationRelativeTo(null);
     }
     public void initCustomComponents(){
@@ -58,8 +58,6 @@ public class FindFoodView extends JFrame {
             }
         });
        // Add Buttons to the Content Pane at the Appropriate Regions
-       this.getContentPane().add(searchByFoodServingEstablishment);
-       this.getContentPane().add(searchByName);
        this.getContentPane().add(theTextBox);
        this.getContentPane().add(searchButton);
        this.getContentPane().add(backToMainButton);
@@ -71,7 +69,16 @@ public class FindFoodView extends JFrame {
     }
     private void searchButtonActionPerformed(ActionEvent e){
         // Do a search thingy!!!
-        // Temp Test
+        // Get the text field out of the text box
+        String theSearch = this.theTextBox.getText();
+        for(int i = 0; i < theFSEList.size(); i++){
+            for(int j = 0; j < theFSEList.get(i).getFSEMenu().size(); j++){
+                if(theFSEList.get(i).getFSEMenu().get(j).getFoodName().contains(theSearch)){
+                    System.out.println("Match Found at Restauraunt");
+                }
+            }
+        }
+
         MainMenuController theMainMenuController = new MainMenuController();
         this.dispose();
     }
