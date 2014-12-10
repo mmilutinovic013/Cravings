@@ -52,8 +52,11 @@ public class FindFoodView extends JFrame {
                 backToMainButtonActionPerformed(evt);
             }
         });
-       theButtonGroup.add(searchByName);
-       theButtonGroup.add(searchByFoodServingEstablishment);
+         searchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButtonActionPerformed(evt);
+            }
+        });
        // Add Buttons to the Content Pane at the Appropriate Regions
        this.getContentPane().add(searchByFoodServingEstablishment);
        this.getContentPane().add(searchByName);
@@ -66,6 +69,14 @@ public class FindFoodView extends JFrame {
         MainMenuController theMainMenuController = new MainMenuController();
         this.dispose();
     }
-    // To Do   
+    private void searchButtonActionPerformed(ActionEvent e){
+        // Do a search thingy!!!
+        // Temp Test
+        MainMenuController theMainMenuController = new MainMenuController();
+        this.dispose();
+    }
+    // To Do : Add a search button action performed
+    
+    // To Do : Results Controller and View with Back to Main button
 }
 
