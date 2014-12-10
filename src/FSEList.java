@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class FSEList implements Serializable {
     
     private ArrayList<FSE> theFSEList = new ArrayList();
+    private ArrayList<Food>theFSEMenu = new ArrayList();
     
     public FSEList(){
      
@@ -21,5 +22,12 @@ public class FSEList implements Serializable {
     public ArrayList<FSE> getListOfFSE(){
         return theFSEList;
     } 
+    public ArrayList<Food> buildFSEMenu(){
+        for(int i = 0; i < 10; i++){
+            int foodNumber = (int)(Math.random() * theFSEMenu.size());
+            theFSEMenu.add(theFoodList.get(foodNumber));
+        }
+        return theFSEMenu;
+    }
     
 }

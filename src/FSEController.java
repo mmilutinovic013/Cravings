@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -12,6 +15,7 @@ public class FSEController {
     private FSEListView theFSEListUI;
     private FSEDetailView theFSEDetailUI;
     private FSETableModel theFSETableModel;
+    private ArrayList<Food>theFSEMenu = new ArrayList();
     
     public FSEController(MainMenuController theMainMenuCntl){
         parentMainMenuCntl = theMainMenuCntl;

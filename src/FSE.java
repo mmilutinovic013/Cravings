@@ -1,5 +1,6 @@
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /*
  * To change this template, choose Tools | Templates
@@ -22,7 +23,8 @@ public class FSE implements Serializable {
     private String fseGenre;
     private double price;
     private int calories;
-	
+    private ArrayList<Food>fseMenu = new ArrayList();
+    
 	public FSE(){
 		
 	}
@@ -45,6 +47,10 @@ public class FSE implements Serializable {
         this.fseGenre = "American";
     }
     
+    public void setFSEMenu(ArrayList<Food> newFSEMenu){
+        fseMenu = newFSEMenu;
+    }
+    
     public void setFSENumber(String newFSENumber){
         fseNumber = newFSENumber;
     }
@@ -53,14 +59,17 @@ public class FSE implements Serializable {
         fseDescription = newFSEDescription;
     }
     
-    public void setFSEName(String newFoodName){
-        fseName = newFoodName;
+    public void setFSEName(String newFSEName){
+        fseName = newFSEName;
     }
     
     public void setFSEAddress(String newFSEAddress){
         fseAddress = newFSEAddress;
     }
     
+    public ArrayList<Food> getFSEMenu(){
+        return fseMenu;
+    }
     
     public String getFSENumber(){
         return fseNumber;
