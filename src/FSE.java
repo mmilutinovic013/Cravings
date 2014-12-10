@@ -12,6 +12,7 @@ import java.io.Serializable;
  */
 public class FSE implements Serializable {
     private String fseNumber;
+    private String fseDescription;
     protected String fseName;
     private String fseAddress;
     private String fseGroup;
@@ -36,7 +37,7 @@ public class FSE implements Serializable {
     public FSE(String newFoodNumber, String newFoodName, String newFoodDescription){
         this.fseNumber = newFoodNumber;
         this.fseName = newFoodName;
-        this.fseAddress = newFoodDescription;
+        this.fseAddress = fseAddress;
         this.fseGroup = "Fruit";
         this.vegetarian = true;
         this.vegan = true;
@@ -44,16 +45,20 @@ public class FSE implements Serializable {
         this.fseGenre = "American";
     }
     
-    public void setFSENumber(String newFoodNumber){
-        fseNumber = newFoodNumber;
+    public void setFSENumber(String newFSENumber){
+        fseNumber = newFSENumber;
+    }
+    
+    public void setFSEDescription(String newFSEDescription){
+        fseDescription = newFSEDescription;
     }
     
     public void setFSEName(String newFoodName){
         fseName = newFoodName;
     }
     
-    public void setFSEAddress(String newFoodAddress){
-        fseAddress = newFoodAddress;
+    public void setFSEAddress(String newFSEAddress){
+        fseAddress = newFSEAddress;
     }
     
     
@@ -80,13 +85,17 @@ public class FSE implements Serializable {
     public boolean getVegan(){
         return vegan;
     }
+    
+    public String setFSEDescription(){
+        return fseDescription;
+    }
         
     public boolean getGlutenFree(){
         return glutenFree;
     }
             
     
-    public String getFoodGenre(){
+    public String getFSEGenre(){
         return fseGenre;
     }
             

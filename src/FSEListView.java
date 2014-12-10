@@ -4,13 +4,16 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
-import javax.swing.*;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingConstants;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.RowFilter;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
-import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
@@ -23,19 +26,18 @@ import javax.swing.table.TableRowSorter;
  *
  * @author markymark1346
  */
-public class FoodServingEstablishmentListView extends JFrame {
-    
-    FoodController parentFoodCntl;
+public class FSEListView extends JFrame {
+    FSEController parentFSEController;
     JPanel buttonPanel;
     JPanel tablePanel;
-    JTable theFoodTable;
+    JTable theFSETable;
     JScrollPane theScrollPane;
     JButton backButton;
     JButton deleteButton;
     JButton editButton;
     JButton newButton;
     
-    TableRowSorter<TableModel> foodTableSorter;
+    TableRowSorter<TableModel> fseTableSorter;
     
     JPanel filterPanel;
     JButton searchButton;
@@ -44,12 +46,12 @@ public class FoodServingEstablishmentListView extends JFrame {
     JComboBox filterFieldList;
 
     
-    public FoodServingEstablishmentListView(FoodController theFoodCntl){
-        parentFoodCntl = theFoodCntl;
+    public FSEListView(FSEController theFSEController){
+        parentFSEController = theFSEController;
         this.initCustomComponents();
         this.setSize(400, 600);
         this.setLocationRelativeTo(null);
-        this.setTitle("Foods List");
+        this.setTitle("Food Serving Establishment List");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
@@ -60,44 +62,44 @@ public class FoodServingEstablishmentListView extends JFrame {
         filterPanel = new JPanel();
         
         backButton = new JButton("Back");
-        backButton.addActionListener(new FoodServingEstablishmentListView.BackButtonListener());
+        backButton.addActionListener(new FSEListView.BackButtonListener());
         newButton = new JButton("New");
-        newButton.addActionListener(new FoodServingEstablishmentListView.NewButtonListener());
+        newButton.addActionListener(new FSEListView.NewButtonListener());
         editButton = new JButton("Edit");
-        editButton.addActionListener(new FoodServingEstablishmentListView.EditButtonListener());
+        editButton.addActionListener(new FSEListView.EditButtonListener());
         deleteButton = new JButton("Delete");
-        deleteButton.addActionListener(new FoodServingEstablishmentListView.DeleteButtonListener());
+        deleteButton.addActionListener(new FSEListView.DeleteButtonListener());
 
         //Table initialization
-        theFoodTable = new JTable(parentFoodCntl.getFoodTableModel());
+        theFSETable = new JTable(parentFSEController.getFSETableModel());
         
         //This fixes the unserializable inner class but need to implement a cleaner solution.
         //theFoodCntl.getFoodTableModel().addTableModelListener(new KludgeTableModelListener());
         
-        theFoodTable.getColumnModel().getColumn(0).setPreferredWidth(25);
-        theFoodTable.getColumnModel().getColumn(1).setPreferredWidth(50);
+        theFSETable.getColumnModel().getColumn(0).setPreferredWidth(25);
+        theFSETable.getColumnModel().getColumn(1).setPreferredWidth(50);
  
         //Put everything together
-        theScrollPane = new JScrollPane(theFoodTable);
+        theScrollPane = new JScrollPane(theFSETable);
         theScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         theScrollPane.setPreferredSize(new Dimension(350,400));
-        theFoodTable.setFillsViewportHeight(true);
+        theFSETable.setFillsViewportHeight(true);
         
-        //Food table sorter
-        foodTableSorter = new TableRowSorter<TableModel>(theFoodTable.getModel());
-        theFoodTable.setRowSorter(foodTableSorter);
+        //FSE table sorter
+        fseTableSorter = new TableRowSorter<TableModel>(theFSETable.getModel());
+        theFSETable.setRowSorter(fseTableSorter);
         
         tablePanel.add(theScrollPane);  
         
-        // Food table filter (search)
+        // FSE table filter (search)
         filterLabel = new JLabel("Search (Filter)");
         filterTextField = new JTextField(15);
-        filterTextField.addActionListener(new FoodServingEstablishmentListView.FilterTextFieldListener());
+        filterTextField.addActionListener(new FSEListView.FilterTextFieldListener());
         
         //Need to initialize the JComboBox after the table to get the columns.
-        String[] columnNames = new String[theFoodTable.getModel().getColumnCount()];
+        String[] columnNames = new String[theFSETable.getModel().getColumnCount()];
         for(int i = 0; i < columnNames.length; i++){
-            columnNames[i] = theFoodTable.getModel().getColumnName(i);
+            columnNames[i] = theFSETable.getModel().getColumnName(i);
         }
         filterFieldList = new JComboBox(columnNames);      
         
@@ -125,18 +127,18 @@ public class FoodServingEstablishmentListView extends JFrame {
             } catch (java.util.regex.PatternSyntaxException e) {
                 return;
             }
-            FoodServingEstablishmentListView.this.foodTableSorter.setRowFilter(rowFilter);
+            FSEListView.this.fseTableSorter.setRowFilter(rowFilter);
         }
     }
     
     
    public class EditButtonListener implements ActionListener{
         public void actionPerformed(ActionEvent evt){
-            int selectedTableRow = theFoodTable.getSelectedRow();
-            int selectedModelRow = theFoodTable.convertRowIndexToModel(selectedTableRow);
-            FSE selectedFSE = FoodServingEstablishmentListView.this.parentFoodCntl.getFood(selectedModelRow);
-            FoodServingEstablishmentListView.this.setVisible(false);
-            FoodServingEstablishmentListView.this.parentFoodCntl.showFoodDetailUI(selectedModelRow, selectedFood);
+            int selectedTableRow = theFSETable.getSelectedRow();
+            int selectedModelRow = theFSETable.convertRowIndexToModel(selectedTableRow);
+            FSE selectedFSE = FSEListView.this.parentFSEController.getFSE(selectedModelRow);
+            FSEListView.this.setVisible(false);
+            FSEListView.this.parentFSEController.showFSEDetailUI(selectedModelRow, selectedFSE);
         }
     }
    
@@ -145,24 +147,24 @@ public class FoodServingEstablishmentListView extends JFrame {
         public void actionPerformed(ActionEvent evt){     
             //Food tmpFood = new Food(99999, "Test Create Food", "Test Create Food Description");
             //FoodListUI.this.parentFoodCntl.getFoodTableModel().addFood(tmpFood);
-            FoodServingEstablishmentListView.this.setVisible(false);
-            FoodServingEstablishmentListView.this.parentFoodCntl.showFoodDetailUI(-1, null);
+            FSEListView.this.setVisible(false);
+            FSEListView.this.parentFSEController.showFSEDetailUI(-1, null);
         }
     }
     
     public class DeleteButtonListener implements ActionListener{
         public void actionPerformed(ActionEvent evt){
-            int selectedTableRow = theFoodTable.getSelectedRow();
-            int selectedModelRow = theFoodTable.convertRowIndexToModel(selectedTableRow);
-            FoodServingEstablishmentListView.this.parentFoodCntl.deleteFood(selectedModelRow);
+            int selectedTableRow = theFSETable.getSelectedRow();
+            int selectedModelRow = theFSETable.convertRowIndexToModel(selectedTableRow);
+            FSEListView.this.parentFSEController.deleteFSE(selectedModelRow);
         }
     }
     
     public class BackButtonListener implements ActionListener{
         public void actionPerformed(ActionEvent evt){        
-            FoodServingEstablishmentListView.this.dispose();
-            FoodServingEstablishmentListView.this.setVisible(false);
-            FoodServingEstablishmentListView.this.parentFoodCntl.getMainMenuCntl().showMenu();
+            FSEListView.this.dispose();
+            FSEListView.this.setVisible(false);
+            FSEListView.this.parentFSEController.getMainMenuCntl().showMenu();
         }
     }
 
@@ -187,10 +189,8 @@ public class FoodServingEstablishmentListView extends JFrame {
      */
     public void tableChanged(TableModelEvent e)
     {
-      FoodServingEstablishmentListView.this.theFoodTable.removeNotify();
-      FoodServingEstablishmentListView.this.theFoodTable.addNotify();
+      FSEListView.this.theFSETable.removeNotify();
+      FSEListView.this.theFSETable.addNotify();
     }
   }
-    
 }
-

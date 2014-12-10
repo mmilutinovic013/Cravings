@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import javax.swing.table.AbstractTableModel;
 
 /*
  * To change this template, choose Tools | Templates
@@ -10,14 +11,14 @@ import java.util.ArrayList;
  *
  * @author markymark1346
  */
-public class FSETableModel {
-    private FoodController theFoodController;
+public class FSETableModel extends AbstractTableModel {
+    private FSEController theFSEController; // do I need? 
     private static String[] columnNames = {"ID", "Name", "Description"};
     private ArrayList<FSE> fseTableData;
     
-    private int nextFoodNumber;
+    private int nextFSENumber;
 
-    public FSETableModel(FoodController parentFoodCntl){
+    public FSETableModel(FSEController parentFSECntl){
         //buildTestFoodTable(10000);
         fseTableData = SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFSEList().getListOfFSE();
     }
@@ -37,8 +38,8 @@ public class FSETableModel {
     public Object getValueAt(int row, int col) {
         Object objectToReturn = new Object();
         switch(col){
-            case 0: objectToReturn = fseTableData.get(row).getFSENumber();break;
-            case 1: objectToReturn = fseTableData.get(row).getFSEName();break;
+            case 0: objectToReturn = fseTableData.get(row).getFSEName();break;
+            case 1: objectToReturn = fseTableData.get(row).getFSEDescription();break;
             case 2: objectToReturn = fseTableData.get(row).getFSEDescription();break;
         }
         return objectToReturn;
@@ -53,7 +54,7 @@ public class FSETableModel {
      * editable.
      */
     public boolean isCellEditable(int row, int col) {
-        //Food that the data/cell address is constant,
+        //FSE that the data/cell address is constant,
         //no matter where the cell appears onscreen.
         if (col < 2) {
             return false;
@@ -79,29 +80,29 @@ public class FSETableModel {
         }
     }
     */
-    public void changeFood(int selectedFSE, FSE theFSEToChange){
+    public void changeFSE(int selectedFSE, FSE theFSEToChange){
         fseTableData.set(selectedFSE, theFSEToChange);
         this.fireTableDataChanged(); // figure out why lolololololololololol
     }
     
-    public Food getFood(int foodToGet){
-        return fseTableData.get(foodToGet);
+    public FSE getFSE(int fseToGet){
+        return fseTableData.get(fseToGet);
     }
     
-    public void addFood(Food foodToAdd){
-        this.fseTableData.add(foodToAdd);
+    public void addFSE(FSE fseToAdd){
+        this.fseTableData.add(fseToAdd);
         this.fireTableDataChanged(); // This is what updates it
     }
     
-    public void deleteFood(int foodToDelete){
-        this.fseTableData.remove(foodToDelete);
-        this.fireTableRowsDeleted(foodToDelete, foodToDelete);
+    public void deleteFSE(int fseToDelete){
+        this.fseTableData.remove(fseToDelete);
+        this.fireTableRowsDeleted(fseToDelete, fseToDelete);
     }
     
-    public  int getNextFoodNumber(){
-        if(nextFoodNumber == 0)nextFoodNumber = 1; //Start numbering at 1 rather than 0.
-        int numberToReturn = nextFoodNumber;
-        nextFoodNumber++;
+    public  int getNextFSENumber(){
+        if(nextFSENumber == 0)nextFSENumber = 1; //Start numbering at 1 rather than 0.
+        int numberToReturn = nextFSENumber;
+        nextFSENumber++;
         return numberToReturn;
     }
  

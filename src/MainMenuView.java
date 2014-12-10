@@ -74,7 +74,7 @@ public class MainMenuView extends JFrame {
     }
     
     private void foodServingEstablishmentListButtonActionPerformed(ActionEvent e){
-        FoodServingEstablishmentListController theFoodServingEstablishmentListController = new FoodServingEstablishmentListController();
+        FSEController theFSEController = new FSEController(theMainMenuController);
         this.dispose();
     }
 }

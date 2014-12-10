@@ -1,7 +1,311 @@
-~AFC Sushi @ Wegman’s #098~^~345 Lowes Blvd.~~Aardvark Kafe~^~906 W. College Ave.~~Abba Java Coffee House~^~256 E. College Ave~~American Ale House & Grill~^~821 Cricklewood Dr.~~American Legion Post #245~^~1950 Pine Hall Dr.~~Applebee’s~^~12 Colonnade Way~~Are U Hungry~^~111 Sowers St.~ ~Atherton Hotel~^~125 S. Atherton St.~~Auntie Anne’s Pretzels~^~2901 E. College Ave.~~Autoport Motel & Restaurant~^~1405 S. Atherton Street~ ~Baby’s Burgers & Shakes~^~131 S. Garner St.~ ~Bar Bleu~^~114 S. Garner St.~~Barnes & Noble~^~365 Benner Pike~ ~Bell’s Greek Pizza~^~214 E. Calder Way~ ~Best Western~^~115 Premiere Dr.~~Big Bowl Noodle House~^~428 E. College Ave.~
-~Boots Convenience Store~^~401 W. Beaver Ave.~~Bradley’s Steaks and Hoagies~^~119 S. Pugh St.~~Brewery, Inc.~^~233 E. Beaver Ave.~~Brothers NY Style Pizza~^~204 E. College Ave.~~Brothers Pizza~^~238 W. Hamilton Ave.~~Brothers Pizza~^~253 Benner Pike, Ste. Ave~ ~Brown Dog Catering~^~220 N. Burrowes St.~~Burger King~^~521 University Dr.~~C C Peppers~^~1625 N. Atherton St.~~CVS Pharmacy #1916~^~265 Northland Ctr.~~CVS Pharmacy #1926~^~138 E. Beaver Ave.~ ~CVS Pharmacy #5459~^~116 West College Ave.~ ~CVS Pharmacy #2781~^~1101 N. Atherton St.~~CVS Pharmacy~^~1630 S. Atherton St.~~Café 210 West~^~210 W. College Ave.~~Café Lemont~^~921 Pike St., Ste 103~~Callao Café & Market~^~434 W. Aaron Dr., Ste. 201~~Canyon Pizza~^~260 E. Beaver Ave.~ ~Canyon Wings~^~219 E. Beaver Ave.~ ~Carnegie House~^~100 Cricklewood Dr.~ 
-~Carver’s Deli & Ice Cream~^~1633 N. Atherton St.~~Centre Hills Country Club~^~153 Country Club Ln.~ ~Champs Sports Bar~^~1611 N. Atherton St.~ ~Chatter’s Cafe~^~650 Westerly Pkwy~~Cheese Shoppe~^~234 E. Calder Way~~Chen’s Mongolian Buffet~^~1880 S. Atherton St.~~Chick-fil-A at Happy Valley~^~1938 N. Atherton St.~~Chili’s Grill & Bar~^~139 S. Allen St.~ ~China Dragon~^~147 S. Allen St.~~China Wok~^~279 Northland Ctr.~ ~Ching Sushi~^~116 S. Allen St.~ ~Chipotle Mexican Grill~^~116 Heister St.~ ~Choice Discount Outlet~^~1320 E. College Ave.~~Chopstick Express~^~134 E. College Ave.~~Christ Community Church~^~200 Ellis Pl.~ ~Chrome Lounge~^~222 W. Beaver Ave.~~Cold Stone Creamery~^~321 E. Beaver Ave.~ ~College 9 Theatre~^~3031 Carnegie Dr.~ ~College Buffet~^~1627-1631 N. Atherton St.~ ~College Mart~^~128 Locust Ln.~ ~College Pizza~^~128 Locust Ln.~ ~College Town Café~^~421 E. Beaver Avenue~~Congregation Brit Shalom~^~620 E. Hamilton Ave.~~Cool Beans 2~^~132 Abigail Ln.~~Corrinado’s Pizza~^~114 Hetzel St.~ ~Country Inn & Suites~^~1357 E. College Ave.~
-~Courtyard by Marriott~^~1730 University Dr.~ ~Cove Pizza Shop~^~1320B East College Ave.~~Cozy Thai Bistro~^~232 S. Allen St.~ ~Cracker Barrel~^~215 Colonnade Blvd.~~D P Dough~^~401 E. Beaver Ave.~ ~Dairy Queen Grill & Chill~^~310 W. Aaron Dr.~ ~Damon’s~^~1031 E. College Ave.~ ~Darkhorse Tavern~^~128 E. College Ave.~ ~The Deli~^~113 Heister St.~~Denny’s Restaurant~^~1860 N. Atherton St.~ ~Dickey’s BBQ Pit~^~333 Benner Pike~~Dino’s Pizzateria~^~2901 E. College Ave.~ ~Dolce Vita Desserts~^~812 Pike St.~~Dollar Tree~^~1657 N. Atherton St.~~Domino’s Pizza~^~1100 North Atherton St.~~Don Patron Mexican Grill~^~1653 N. Atherton St.~~Dragon Land Grocery~^~2081 E. College Ave.~~Dunkin Donuts~^~1381 E. College Ave.~~Dunkin Donuts~^~200 W. College Ave.~ ~Dunkin Donuts~^~3180 W. College Ave.~~Dunlap Meckley Dean Post~^~500 W. Pine Hall Rd.~ ~East Asian Market~^~215A Blue Course Dr.~~East European Market~^~2110 N. Atherton St.~ ~Eat’n Park Restaurant #52~^~1617 N. Atherton St.~ ~Edible Arrangements~^~337 Benner Pike~ ~El Jalisco~^~2105 N. Atherton St.~ ~Faccia Luna~^~1229 S. Atherton St.~ ~Fairfield Inn & Suites~^~2215 N. Atherton St.~ ~Far Corners Asian Grocery~^~1101 N. Atherton St.~ ~Ferguson Township Lion’s Club~^~424 W. Pine Grove Rd.~~Fiddlehead~^~134 W. College Ave.~~Five Guys Famous Burgers & Fries~^~226 W. College Ave.~ ~Fox Pizza~^~3180 W. College Ave.~ ~Foxdale Village~^~500 E. Marylyn Ave.~~Fraser Street Deli~^~109 S. Fraser St.~ ~Fresh-n-Fill~^~401 S. Pugh Street~~Fuji & Jade Garden~^~418 Westerly Pkwy.~~Fun Unleashed~^~339 Benner Pike~ ~Funky Freezer~^~Mobile~~Galanga by Cozy Thai~^~454 E. College Ave.~~Gardner’s Candies~^~1613 N. Atherton Ave~~Garfield’s~^~2901 E. College Ave.~ ~Giant Foods #72~^~255 Northland Ctr.~ ~Giant Foods #111~^~2250 E. College Ave.~ ~Gigi’s~^~2080 Cato Park~~Gingerbread Man Inc.~^~130 Heister St.~ ~Golden Ladle~^~2901 E. College Ave.~~Granary~^~2766 W. College Ave.~ ~Greek~^~102 E. Clinton Ave.~~Green Bowl~^~131 W. Beaver Ave.~~Gumby’s Pizza~^~300 S. Pugh St.~ ~Hampton Inn~^~1101 E. College Ave.~~Hampton Inn & Suites~^~1955 Waddle Rd.~ ~Harner Farms~^~2191 W. Whitehall Rd.~ ~Harrison’s Wine Grill & Catering~^~1221 E. College Ave.~~Herwig’s~^~129 S. Fraser St.~ ~Hickory Farms~^~2901 E. College Ave.~~Hi-Way Pizza~^~1688 N. Atherton St.~~Hillside Farms~^~Hills Plaza – S. Atherton St.~ ~Hilton Garden Inn~^~1221 E. College Ave.~ ~Hoag’s Catering~^~2280 Commercial Blvd.~~Hogfather’s Old Fashioned BBQ~^~1669 N. Atherton St.~~Holiday Inn Express~^~1925 Waddle Rd.~ ~Home Delivery Pizza~^~1820 S. Atherton St.~ ~Honeybaked Ham Co. & Café~^~1724 S. Atherton St.~ ~Hoss’s Steak & Seafood House~^~1450 N. Atherton St.~ ~Hotel State College~^~100 W. College Ave.~~Houserville UMC – House of Hope~^~1320 Houserville Rd~~Hunan Wok~^~452 E. College Ave.~ ~Icy Snow KTV~^~204 W. College Ave.~~IHOP~^~1661 S. Atherton St.~ ~India Pavilion~^~222 E. Calder Way~ ~Insomnia Cookies~^~412 E. Beaver Ave.~~Irving’s Bagels, Inc.~^~110 E. College Ave.~ ~Jersey Mike’s Subs~^~128 S. Allen St.~~Jimmy Johns~^~434 E. College Ave.~ ~K C Club~^~850 Stratford Dr.~ ~Kaarma~^~120 E. Beaver Ave.~~Kader’s Kona Ice~^~Mobile Vehicle~ ~Kader’s Kona Ice~^~Mobile Vehicle~~Kamrai Thai & Sushi House~^~901 Pike Street~~Ken’s Best Wurst~^~141 S. Garner St.~~Keystone Yankee Catering~^~707 Pike St.~ ~Kildare’s Irish Pub~^~538 E. College Ave.~~Kimchi Korean Restaurant~^~1100 N. Atherton St.~ ~Kiwi Yogurt~^~324 E. College Ave.~~Krishan Indian Grocery~^~230A W. College Ave.~
-~Laura’s Home Cooking~^~1788 N. Atherton St.~~Lemongrass Vietnamese Café~^~432 E. College Ave.~~Lemont Farmer’s Market~^~133 Mount Nittany Rd.~~Levels~^~420 E. College Ave.~~Lion’s Den~^~118 S. Garner St.~ ~Little Caesar’s Pizza~^~1712 S. Atherton St.~ ~Little Mama’s~^~444 E. College Ave.~~Little Szechuan~^~228 W. College Ave.~~Long John Silvers/A&W~^~2605 E. College Ave.~ ~Luna 2~^~2609 E. College Ave.~~Lychee Restaurant~^~1341 S. Atherton St., Ste. 4~~M & C Cakery~^~434 W. Aaron Dr.~~Mad Mex~^~240 S. Pugh St.~ ~Maki Yaki~^~407 E. Beaver Ave.~ ~Mamma Mia~^~128 E. College Ave.~~Margarita’s Pizzeria~^~222 W. Beaver Ave.~ ~Mario’s Italian Restaurant~^~1272 N. Atherton St.~~McDonald’s~^~1615 N. Atherton St.~ ~McDonald’s~^~442 E. College Ave.~ ~McDonald’s #3784~^~2167 S. Atherton St.~ ~McDonald’s #6568~^~2821 E. College Ave.~~McLanahan’s Downtown Market~^~116 S. Allen St.~~McLanahan’s Student Store~^~414 E. College Ave.~~Meyer Dairy Store~^~2390 S. Atherton St.~
+~AFC Sushi @ Wegman‚Äôs #098~^~345 Lowes Blvd.~
+~Aardvark Kafe~^~906 W. College Ave.~
+~Abba Java Coffee House~^~256 E. College Ave~
+~American Ale House & Grill~^~821 Cricklewood Dr.~
+~American Legion Post #245~^~1950 Pine Hall Dr.~
+~Applebee‚Äôs~^~12 Colonnade Way~
+~Are U Hungry~^~111 Sowers St.~ 
+~Atherton Hotel~^~125 S. Atherton St.~
+~Auntie Anne‚Äôs Pretzels~^~2901 E. College Ave.~
+~Autoport Motel & Restaurant~^~1405 S. Atherton Street~ 
+~Baby‚Äôs Burgers & Shakes~^~131 S. Garner St.~ 
+~Bar Bleu~^~114 S. Garner St.~
+~Barnes & Noble~^~365 Benner Pike~ 
+~Bell‚Äôs Greek Pizza~^~214 E. Calder Way~ 
+~Best Western~^~115 Premiere Dr.~
+~Big Bowl Noodle House~^~428 E. College Ave.~
+~Boots Convenience Store~^~401 W. Beaver Ave.~
+~Bradley‚Äôs Steaks and Hoagies~^~119 S. Pugh St.~
+~Brewery, Inc.~^~233 E. Beaver Ave.~
+~Brothers NY Style Pizza~^~204 E. College Ave.~
+~Brothers Pizza~^~238 W. Hamilton Ave.~
+~Brothers Pizza~^~253 Benner Pike, Ste. Ave~ 
+~Brown Dog Catering~^~220 N. Burrowes St.~
+~Burger King~^~521 University Dr.~
+~C C Peppers~^~1625 N. Atherton St.~
+~CVS Pharmacy #1916~^~265 Northland Ctr.~
+~CVS Pharmacy #1926~^~138 E. Beaver Ave.~ 
+~CVS Pharmacy #5459~^~116 West College Ave.~ 
+~CVS Pharmacy #2781~^~1101 N. Atherton St.~
+~CVS Pharmacy~^~1630 S. Atherton St.~
+~Caf√© 210 West~^~210 W. College Ave.~
+~Caf√© Lemont~^~921 Pike St., Ste 103~
+~Callao Caf√© & Market~^~434 W. Aaron Dr., Ste. 201~
+~Canyon Pizza~^~260 E. Beaver Ave.~ 
+~Canyon Wings~^~219 E. Beaver Ave.~ 
+~Carnegie House~^~100 Cricklewood Dr.~ 
+~Carver‚Äôs Deli & Ice Cream~^~1633 N. Atherton St.~
+~Centre Hills Country Club~^~153 Country Club Ln.~ 
+~Champs Sports Bar~^~1611 N. Atherton St.~ 
+~Chatter‚Äôs Cafe~^~650 Westerly Pkwy~
+~Cheese Shoppe~^~234 E. Calder Way~
+~Chen‚Äôs Mongolian Buffet~^~1880 S. Atherton St.~
+~Chick-fil-A at Happy Valley~^~1938 N. Atherton St.~
+~Chili‚Äôs Grill & Bar~^~139 S. Allen St.~ 
+~China Dragon~^~147 S. Allen St.~
+~China Wok~^~279 Northland Ctr.~ 
+~Ching Sushi~^~116 S. Allen St.~ 
+~Chipotle Mexican Grill~^~116 Heister St.~ 
+~Choice Discount Outlet~^~1320 E. College Ave.~
+~Chopstick Express~^~134 E. College Ave.~
+~Christ Community Church~^~200 Ellis Pl.~ 
+~Chrome Lounge~^~222 W. Beaver Ave.~
+~Cold Stone Creamery~^~321 E. Beaver Ave.~ 
+~College 9 Theatre~^~3031 Carnegie Dr.~ 
+~College Buffet~^~1627-1631 N. Atherton St.~ 
+~College Mart~^~128 Locust Ln.~ 
+~College Pizza~^~128 Locust Ln.~ 
+~College Town Caf√©~^~421 E. Beaver Avenue~
+~Congregation Brit Shalom~^~620 E. Hamilton Ave.~
+~Cool Beans 2~^~132 Abigail Ln.~
+~Corrinado‚Äôs Pizza~^~114 Hetzel St.~ 
+~Country Inn & Suites~^~1357 E. College Ave.~
+~Courtyard by Marriott~^~1730 University Dr.~ 
+~Cove Pizza Shop~^~1320B East College Ave.~
+~Cozy Thai Bistro~^~232 S. Allen St.~ 
+~Cracker Barrel~^~215 Colonnade Blvd.~
+~D P Dough~^~401 E. Beaver Ave.~ 
+~Dairy Queen Grill & Chill~^~310 W. Aaron Dr.~ 
+~Damon‚Äôs~^~1031 E. College Ave.~ 
+~Darkhorse Tavern~^~128 E. College Ave.~ 
+~The Deli~^~113 Heister St.~
+~Denny‚Äôs Restaurant~^~1860 N. Atherton St.~ 
+~Dickey‚Äôs BBQ Pit~^~333 Benner Pike~
+~Dino‚Äôs Pizzateria~^~2901 E. College Ave.~ 
+~Dolce Vita Desserts~^~812 Pike St.~
+~Dollar Tree~^~1657 N. Atherton St.~
+~Domino‚Äôs Pizza~^~1100 North Atherton St.~
+~Don Patron Mexican Grill~^~1653 N. Atherton St.~
+~Dragon Land Grocery~^~2081 E. College Ave.~
+~Dunkin Donuts~^~1381 E. College Ave.~
+~Dunkin Donuts~^~200 W. College Ave.~ 
+~Dunkin Donuts~^~3180 W. College Ave.~
+~Dunlap Meckley Dean Post~^~500 W. Pine Hall Rd.~ 
+~East Asian Market~^~215A Blue Course Dr.~
+~East European Market~^~2110 N. Atherton St.~ 
+~Eat‚Äôn Park Restaurant #52~^~1617 N. Atherton St.~ 
+~Edible Arrangements~^~337 Benner Pike~ 
+~El Jalisco~^~2105 N. Atherton St.~ 
+~Faccia Luna~^~1229 S. Atherton St.~ 
+~Fairfield Inn & Suites~^~2215 N. Atherton St.~ 
+~Far Corners Asian Grocery~^~1101 N. Atherton St.~ 
+~Ferguson Township Lion‚Äôs Club~^~424 W. Pine Grove Rd.~
+~Fiddlehead~^~134 W. College Ave.~
+~Five Guys Famous Burgers & Fries~^~226 W. College Ave.~ 
+~Fox Pizza~^~3180 W. College Ave.~ 
+~Foxdale Village~^~500 E. Marylyn Ave.~
+~Fraser Street Deli~^~109 S. Fraser St.~ 
+~Fresh-n-Fill~^~401 S. Pugh Street~
+~Fuji & Jade Garden~^~418 Westerly Pkwy.~
+~Fun Unleashed~^~339 Benner Pike~ 
+~Funky Freezer~^~Mobile~
+~Galanga by Cozy Thai~^~454 E. College Ave.~
+~Gardner‚Äôs Candies~^~1613 N. Atherton Ave~
+~Garfield‚Äôs~^~2901 E. College Ave.~ 
+~Giant Foods #72~^~255 Northland Ctr.~ 
+~Giant Foods #111~^~2250 E. College Ave.~ 
+~Gigi‚Äôs~^~2080 Cato Park~
+~Gingerbread Man Inc.~^~130 Heister St.~ 
+~Golden Ladle~^~2901 E. College Ave.~
+~Granary~^~2766 W. College Ave.~ 
+~Greek~^~102 E. Clinton Ave.~
+~Green Bowl~^~131 W. Beaver Ave.~
+~Gumby‚Äôs Pizza~^~300 S. Pugh St.~ 
+~Hampton Inn~^~1101 E. College Ave.~
+~Hampton Inn & Suites~^~1955 Waddle Rd.~ 
+~Harner Farms~^~2191 W. Whitehall Rd.~ 
+~Harrison‚Äôs Wine Grill & Catering~^~1221 E. College Ave.~
+~Herwig‚Äôs~^~129 S. Fraser St.~ 
+~Hickory Farms~^~2901 E. College Ave.~
+~Hi-Way Pizza~^~1688 N. Atherton St.~
+~Hillside Farms~^~Hills Plaza ‚Äì S. Atherton St.~ 
+~Hilton Garden Inn~^~1221 E. College Ave.~ 
+~Hoag‚Äôs Catering~^~2280 Commercial Blvd.~
+~Hogfather‚Äôs Old Fashioned BBQ~^~1669 N. Atherton St.~
+~Holiday Inn Express~^~1925 Waddle Rd.~ 
+~Home Delivery Pizza~^~1820 S. Atherton St.~ 
+~Honeybaked Ham Co. & Caf√©~^~1724 S. Atherton St.~ 
+~Hoss‚Äôs Steak & Seafood House~^~1450 N. Atherton St.~ 
+~Hotel State College~^~100 W. College Ave.~
+~Houserville UMC ‚Äì House of Hope~^~1320 Houserville Rd~
+~Hunan Wok~^~452 E. College Ave.~ 
+~Icy Snow KTV~^~204 W. College Ave.~
+~IHOP~^~1661 S. Atherton St.~ 
+~India Pavilion~^~222 E. Calder Way~ 
+~Insomnia Cookies~^~412 E. Beaver Ave.~
+~Irving‚Äôs Bagels, Inc.~^~110 E. College Ave.~ 
+~Jersey Mike‚Äôs Subs~^~128 S. Allen St.~
+~Jimmy Johns~^~434 E. College Ave.~ 
+~K C Club~^~850 Stratford Dr.~ 
+~Kaarma~^~120 E. Beaver Ave.~
+~Kader‚Äôs Kona Ice~^~Mobile Vehicle~ 
+~Kader‚Äôs Kona Ice~^~Mobile Vehicle~
+~Kamrai Thai & Sushi House~^~901 Pike Street~
+~Ken‚Äôs Best Wurst~^~141 S. Garner St.~
+~Keystone Yankee Catering~^~707 Pike St.~ 
+~Kildare‚Äôs Irish Pub~^~538 E. College Ave.~
+~Kimchi Korean Restaurant~^~1100 N. Atherton St.~ 
+~Kiwi Yogurt~^~324 E. College Ave.~
+~Krishan Indian Grocery~^~230A W. College Ave.~
+~Laura‚Äôs Home Cooking~^~1788 N. Atherton St.~
+~Lemongrass Vietnamese Caf√©~^~432 E. College Ave.~
+~Lemont Farmer‚Äôs Market~^~133 Mount Nittany Rd.~
+~Levels~^~420 E. College Ave.~
+~Lion‚Äôs Den~^~118 S. Garner St.~ 
+~Little Caesar‚Äôs Pizza~^~1712 S. Atherton St.~ 
+~Little Mama‚Äôs~^~444 E. College Ave.~
+~Little Szechuan~^~228 W. College Ave.~
+~Long John Silvers/A&W~^~2605 E. College Ave.~ 
+~Luna 2~^~2609 E. College Ave.~
+~Lychee Restaurant~^~1341 S. Atherton St., Ste. 4~
+~M & C Cakery~^~434 W. Aaron Dr.~
+~Mad Mex~^~240 S. Pugh St.~ 
+~Maki Yaki~^~407 E. Beaver Ave.~ 
+~Mamma Mia~^~128 E. College Ave.~
+~Margarita‚Äôs Pizzeria~^~222 W. Beaver Ave.~ 
+~Mario‚Äôs Italian Restaurant~^~1272 N. Atherton St.~
+~McDonald‚Äôs~^~1615 N. Atherton St.~ 
+~McDonald‚Äôs~^~442 E. College Ave.~ 
+~McDonald‚Äôs #3784~^~2167 S. Atherton St.~ 
+~McDonald‚Äôs #6568~^~2821 E. College Ave.~
+~McLanahan‚Äôs Downtown Market~^~116 S. Allen St.~
+~McLanahan‚Äôs Student Store~^~414 E. College Ave.~
+~Meyer Dairy Store~^~2390 S. Atherton St.~
 ~Minit Mart #214~^~106 N. Atherton St.~
-~Minit Mart #219~^~913 W. College Ave.~ ~Momezon~^~1518B N. Atherton St.~~Monte Carlos Pizza & Wings~^~709 Bellaire Ave.~ ~Mt. Nittany United Methodist Church~^~1500 E. Branch Rd.~~My Thai~^~422 Westerly Pkwy.~~The Naked Egg Café~^~320 Pine Grove Rd.~~Nano Mart~^~129 Locust Ln.~~Nature’s Pantry~^~2331 Commercial Blvd.~~Ni Hao Asian Cuisine~^~289 Northland Center~~Nittany Grill~^~1800 E. Park Ave.~~Nittany Tea (Kung Fu Tea)~^~320 W. Beaver Ave.~~Nola’s Joint~^~129 McAllister Alley~~Noodles & Company~^~244 W. College Ave.~~North Atherton Farmer’s Market~^~2615 Greentech Dr~~Northland Recreation Center~^~1521 Martin St.~ ~Old Oak Tavern~^~101 E. Pine Grove Rd.~~Olde New York~^~2298 E. College Ave.~~Olive Garden~^~1945 Waddle Rd.~ ~Ollie’s Bargain Outlet~^~1919 S. Atherton St.~ ~Original Brothers Pizza Inc.~^~231 Northland Ctr.~ ~Otto’s Pub & Brewery~^~2235 N. Atherton St.~~Outback Steakhouse~^~1905 Waddle Rd.~~P J Harrigan’s~^~1450 S. Atherton St.~ ~Panera Bread~^~148 S. Allen St.~ ~Panera Bread~^~1613 N. Atherton St., Ste. A~~Papa John’s Pizza~^~2110 N. Atherton St.~ ~Papa John’s Pizza~^~1341 S. Atherton St.~~Penang Asian Fusion Cuisine~^~1221 N. Atherton St.~~Penn Kebab~^~418 E. College Ave. #1~~Penn State Sub Shop #1~^~225 E. Beaver Ave.~ ~Penn State Sub Shop #3~^~1788 N. Atherton St.~ ~Philly Pretzel Factory~^~373 Benner Pike~~Pho Eleven~^~146 N. Atherton St.~~Phyrst, Inc.~^~111 ? E. Beaver Ave.~ ~Pine Grove Mills Shell~^~Rt. 45 & Rt. 26~~Pita Cabana~^~334 E. Calder Way~~Pita Pit~^~218 E. Calder Way~ ~Pizza Heaven~^~301 Science Park Road~~Pizza Hut~^~760 S. Atherton St.~ ~Premiere Theatre 12~^~125 Premiere Dr.~ ~Pretzels Plus~^~2901 E. College Ave.~~Qdoba Mexican Grill~^~206 W. College Ave.~~Quaker Steak & Lube~^~501 Benner Pike~~Quality Inn~^~1274 N. Atherton St.~~Red Lobster #6221~^~1670 N. Atherton St.~ ~Rey Azteca Mexican Restaurant~^~485 Benner Pike~~Rita’s Italian Ice of Happy Valley~^~119 E. Beaver Ave.~ ~Rita’s Italian Ice of Happy Valley~^~Mobile Vehicle~~Rite Aid #11014~^~1536 N. Atherton St.~ ~Rite Aid #0793~^~1927 S. Atherton St.~ ~Rite Aid #11013~^~510 Westerly Pkwy.~ ~Rotelli~^~250 E. Calder Way~ ~Ruby Tuesday #3695~^~1550 S. Atherton St.~ ~Saint’s Café~^~123 W. Beaver Ave.~ ~Sakura Restaurant~^~1525 S. Atherton St.~~Sam’s Club~^~381 Benner Pike~ ~Say Sushi~^~310 S. Allen St.~ ~Schoolhouse Lounge/Elby’s~^~1663 S. Atherton St.~~Seoul Garden~^~129 Locust Ln.~ ~Shaker’s Grill~^~137 E. Beaver Ave.~~Shandygaff~^~212 E. College Ave.~ ~Sharkies~^~110 Sowers St.~ ~Sheetz~^~120 Southside Plaza~~Sheetz Inc. #122~^~1781 N. Atherton St.~ ~Sheetz Inc. #150~^~2000 E. College Ave.~ ~Sheetz Inc. #287~^~101 Valley Vista Dr.~ ~Sheetz #339~^~765 Benner Pike~ ~Sichuan Bistro~^~332 W. College Ave.~~Snappy’s~^~200 E. College Ave.~~Snappy’s~^~1209 N. Atherton St.~ ~Snappy’s~^~535 University Dr.~ ~South Hills School of Business~^~480 Waupelani Dr.~ ~Spat’s Café~^~142 E. College Ave.~ ~Spring Hill Suites~^~1935 Waddle Rd.~ ~Starbucks Coffee~^~2030 N. Atherton St.~ ~Starbucks Coffee #7822~^~232 W. College Ave.~~Starbucks Coffee Co.~^~141 S. Garner St.~ ~State College Meals On Wheels~^~205 S. Garner St.~~State College Diner~^~2105 S. Atherton St.~~State College Farmer’s Market~^~Locust Ln.~~State College International Market~^~328 S. Allen St.~ ~State College Little League~^~Bristol Ave.~~State College Pizza~^~540 Westerly Parkway~~State College Teener League~^~Airport Rd.~~Subway~^~1665 N. Atherton St.~~Subway~^~1718 S. Atherton St.~~Subway~^~373 Benner Pike~ ~Subway~^~100 S. Burrowes St.~ ~Subway~^~454 E. College Ave.~~Subway~^~2790 W. College Ave.~~Subway~^~283 Northland Ctr.~~Subway~^~300 S. Pugh St.~~Suzie Wong’s Egg Rolls~^~315 W. Aaron Dr.~ ~Sweet Frog~^~281 Northland Ctr.~~Sweet Tooth Bakery~^~120 Miller Aly.~ ~T.G.I. Fridays~^~1215 N. Atherton St.~ ~Taco Bell~^~310 E. College Ave.~~Taco Bell #09423~^~100 Rolling Ridge Dr.~ ~Tadashi Restaurant~^~206 West College Ave~~Tai Pei Chinese Restaurant~^~2222 E. College Ave.~ ~Target~^~315 Colonnade Blvd.~~Tavern Restaurant~^~220 E. College Ave.~ ~Tea Time Inc.~^~124 McAllister Alley~~Texas Roadhouse~^~1885 Waddle Rd.~ ~That Oriental Store~^~451 Railroad Ave.~ ~Toftrees Hotel & Resort~^~1 Country Club Ln.~~Trader Joe’s~^~243 Patriot Ln.~ ~Tuesday’s Farmer’s Market~^~100 Block Locust Ln.~~Uncle Chen’s~^~430 E. College Ave.~ ~UnderGround Burgers and Crepes~^~404 E. Calder Way~~Uni-Mart #4053~^~1381 E. College Ave.~ ~Uni-Mart #4081~^~500 E. College Ave.~ ~Uni-Mart #4001~^~315 W. Aaron Dr.~ ~Uni-Mart #4161~^~5140 W. Buffalo Run Rd.~ ~Uni-Mart #4167~^~3180 W. College Ave.~ ~Uni-Mart/Khala, LLC~^~1200 S. Atherton St.~ ~University Club~^~331 W. College Ave.~ ~Veteran’s Club of State College~^~139 N. Barnard St.~~Village at Penn State~^~361 Presidents Dr.~ ~Waffle Shop~^~364 E. College Ave.~ ~Waffle Shop~^~1229 N. Atherton St.~ ~Waffle Shop~^~1610 W. College Ave.~ ~Wal-Mart #1640~^~1665 N. Atherton St.~ ~Wal-Mart #2230~^~373 Benner Pike~ ~Webster’s Bookstore Café~^~133 E. Beaver Ave.~~Wegman’s Food Market~^~345 Colonnade Blvd.~~Weis Markets #33~^~560 Westerly Pkwy.~ ~Weis Markets #51~^~1471 Martin St.~ ~Weis Markets #137~^~110 Rolling Ridge Dr.~~Wendy’s~^~1610 N. Atherton St.~~Westside Stadium Bar & Grill~^~1301 W. College Ave.~~Wings Over Happy Valley~^~536 Westerly Pkwy.~ ~Ye Olde College Diner~^~126 W. College Ave.~ ~Yogurt Express~^~426 E. College Ave.~~Yummy Café~^~320 E. Calder Way~~Zen Wings and Things~^~433 E. Beaver Ave.~ ~Zola New World Bistro~^~324 W. College Ave.~
+~Minit Mart #219~^~913 W. College Ave.~ 
+~Momezon~^~1518B N. Atherton St.~
+~Monte Carlos Pizza & Wings~^~709 Bellaire Ave.~ 
+~Mt. Nittany United Methodist Church~^~1500 E. Branch Rd.~
+~My Thai~^~422 Westerly Pkwy.~
+~The Naked Egg Caf√©~^~320 Pine Grove Rd.~
+~Nano Mart~^~129 Locust Ln.~
+~Nature‚Äôs Pantry~^~2331 Commercial Blvd.~
+~Ni Hao Asian Cuisine~^~289 Northland Center~
+~Nittany Grill~^~1800 E. Park Ave.~
+~Nittany Tea (Kung Fu Tea)~^~320 W. Beaver Ave.~
+~Nola‚Äôs Joint~^~129 McAllister Alley~
+~Noodles & Company~^~244 W. College Ave.~
+~North Atherton Farmer‚Äôs Market~^~2615 Greentech Dr~
+~Northland Recreation Center~^~1521 Martin St.~ 
+~Old Oak Tavern~^~101 E. Pine Grove Rd.~
+~Olde New York~^~2298 E. College Ave.~
+~Olive Garden~^~1945 Waddle Rd.~ 
+~Ollie‚Äôs Bargain Outlet~^~1919 S. Atherton St.~ 
+~Original Brothers Pizza Inc.~^~231 Northland Ctr.~ 
+~Otto‚Äôs Pub & Brewery~^~2235 N. Atherton St.~
+~Outback Steakhouse~^~1905 Waddle Rd.~
+~P J Harrigan‚Äôs~^~1450 S. Atherton St.~ 
+~Panera Bread~^~148 S. Allen St.~ 
+~Panera Bread~^~1613 N. Atherton St., Ste. A~
+~Papa John‚Äôs Pizza~^~2110 N. Atherton St.~ 
+~Papa John‚Äôs Pizza~^~1341 S. Atherton St.~
+~Penang Asian Fusion Cuisine~^~1221 N. Atherton St.~
+~Penn Kebab~^~418 E. College Ave. #1~
+~Penn State Sub Shop #1~^~225 E. Beaver Ave.~ 
+~Penn State Sub Shop #3~^~1788 N. Atherton St.~ 
+~Philly Pretzel Factory~^~373 Benner Pike~
+~Pho Eleven~^~146 N. Atherton St.~
+~Phyrst, Inc.~^~111 ? E. Beaver Ave.~ 
+~Pine Grove Mills Shell~^~Rt. 45 & Rt. 26~
+~Pita Cabana~^~334 E. Calder Way~
+~Pita Pit~^~218 E. Calder Way~ 
+~Pizza Heaven~^~301 Science Park Road~
+~Pizza Hut~^~760 S. Atherton St.~ 
+~Premiere Theatre 12~^~125 Premiere Dr.~ 
+~Pretzels Plus~^~2901 E. College Ave.~
+~Qdoba Mexican Grill~^~206 W. College Ave.~
+~Quaker Steak & Lube~^~501 Benner Pike~
+~Quality Inn~^~1274 N. Atherton St.~
+~Red Lobster #6221~^~1670 N. Atherton St.~ 
+~Rey Azteca Mexican Restaurant~^~485 Benner Pike~
+~Rita‚Äôs Italian Ice of Happy Valley~^~119 E. Beaver Ave.~ 
+~Rita‚Äôs Italian Ice of Happy Valley~^~Mobile Vehicle~
+~Rite Aid #11014~^~1536 N. Atherton St.~ 
+~Rite Aid #0793~^~1927 S. Atherton St.~ 
+~Rite Aid #11013~^~510 Westerly Pkwy.~ 
+~Rotelli~^~250 E. Calder Way~ 
+~Ruby Tuesday #3695~^~1550 S. Atherton St.~ 
+~Saint‚Äôs Caf√©~^~123 W. Beaver Ave.~ 
+~Sakura Restaurant~^~1525 S. Atherton St.~
+~Sam‚Äôs Club~^~381 Benner Pike~ 
+~Say Sushi~^~310 S. Allen St.~ 
+~Schoolhouse Lounge/Elby‚Äôs~^~1663 S. Atherton St.~
+~Seoul Garden~^~129 Locust Ln.~ 
+~Shaker‚Äôs Grill~^~137 E. Beaver Ave.~
+~Shandygaff~^~212 E. College Ave.~ 
+~Sharkies~^~110 Sowers St.~ 
+~Sheetz~^~120 Southside Plaza~
+~Sheetz Inc. #122~^~1781 N. Atherton St.~ 
+~Sheetz Inc. #150~^~2000 E. College Ave.~ 
+~Sheetz Inc. #287~^~101 Valley Vista Dr.~ 
+~Sheetz #339~^~765 Benner Pike~ 
+~Sichuan Bistro~^~332 W. College Ave.~
+~Snappy‚Äôs~^~200 E. College Ave.~
+~Snappy‚Äôs~^~1209 N. Atherton St.~ 
+~Snappy‚Äôs~^~535 University Dr.~ 
+~South Hills School of Business~^~480 Waupelani Dr.~ 
+~Spat‚Äôs Caf√©~^~142 E. College Ave.~ 
+~Spring Hill Suites~^~1935 Waddle Rd.~ 
+~Starbucks Coffee~^~2030 N. Atherton St.~ 
+~Starbucks Coffee #7822~^~232 W. College Ave.~
+~Starbucks Coffee Co.~^~141 S. Garner St.~ 
+~State College Meals On Wheels~^~205 S. Garner St.~
+~State College Diner~^~2105 S. Atherton St.~
+~State College Farmer‚Äôs Market~^~Locust Ln.~
+~State College International Market~^~328 S. Allen St.~ 
+~State College Little League~^~Bristol Ave.~
+~State College Pizza~^~540 Westerly Parkway~
+~State College Teener League~^~Airport Rd.~
+~Subway~^~1665 N. Atherton St.~
+~Subway~^~1718 S. Atherton St.~
+~Subway~^~373 Benner Pike~ 
+~Subway~^~100 S. Burrowes St.~ 
+~Subway~^~454 E. College Ave.~
+~Subway~^~2790 W. College Ave.~
+~Subway~^~283 Northland Ctr.~
+~Subway~^~300 S. Pugh St.~
+~Suzie Wong‚Äôs Egg Rolls~^~315 W. Aaron Dr.~ 
+~Sweet Frog~^~281 Northland Ctr.~
+~Sweet Tooth Bakery~^~120 Miller Aly.~ 
+~T.G.I. Fridays~^~1215 N. Atherton St.~ 
+~Taco Bell~^~310 E. College Ave.~
+~Taco Bell #09423~^~100 Rolling Ridge Dr.~ 
+~Tadashi Restaurant~^~206 West College Ave~
+~Tai Pei Chinese Restaurant~^~2222 E. College Ave.~ 
+~Target~^~315 Colonnade Blvd.~
+~Tavern Restaurant~^~220 E. College Ave.~ 
+~Tea Time Inc.~^~124 McAllister Alley~
+~Texas Roadhouse~^~1885 Waddle Rd.~ 
+~That Oriental Store~^~451 Railroad Ave.~ 
+~Toftrees Hotel & Resort~^~1 Country Club Ln.~
+~Trader Joe‚Äôs~^~243 Patriot Ln.~ 
+~Tuesday‚Äôs Farmer‚Äôs Market~^~100 Block Locust Ln.~
+~Uncle Chen‚Äôs~^~430 E. College Ave.~ 
+~UnderGround Burgers and Crepes~^~404 E. Calder Way~
+~Uni-Mart #4053~^~1381 E. College Ave.~ 
+~Uni-Mart #4081~^~500 E. College Ave.~ 
+~Uni-Mart #4001~^~315 W. Aaron Dr.~ 
+~Uni-Mart #4161~^~5140 W. Buffalo Run Rd.~ 
+~Uni-Mart #4167~^~3180 W. College Ave.~ 
+~Uni-Mart/Khala, LLC~^~1200 S. Atherton St.~ 
+~University Club~^~331 W. College Ave.~ 
+~Veteran‚Äôs Club of State College~^~139 N. Barnard St.~
+~Village at Penn State~^~361 Presidents Dr.~ 
+~Waffle Shop~^~364 E. College Ave.~ 
+~Waffle Shop~^~1229 N. Atherton St.~ 
+~Waffle Shop~^~1610 W. College Ave.~ 
+~Wal-Mart #1640~^~1665 N. Atherton St.~ 
+~Wal-Mart #2230~^~373 Benner Pike~ 
+~Webster‚Äôs Bookstore Caf√©~^~133 E. Beaver Ave.~
+~Wegman‚Äôs Food Market~^~345 Colonnade Blvd.~
+~Weis Markets #33~^~560 Westerly Pkwy.~ 
+~Weis Markets #51~^~1471 Martin St.~ 
+~Weis Markets #137~^~110 Rolling Ridge Dr.~
+~Wendy‚Äôs~^~1610 N. Atherton St.~
+~Westside Stadium Bar & Grill~^~1301 W. College Ave.~
+~Wings Over Happy Valley~^~536 Westerly Pkwy.~ 
+~Ye Olde College Diner~^~126 W. College Ave.~ 
+~Yogurt Express~^~426 E. College Ave.~
+~Yummy Caf√©~^~320 E. Calder Way~
+~Zen Wings and Things~^~433 E. Beaver Ave.~ 
+~Zola New World Bistro~^~324 W. College Ave.~

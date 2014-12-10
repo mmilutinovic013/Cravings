@@ -17,6 +17,7 @@ public class SerializedDataModel implements Serializable {
     private FoodGroupList theFoodGroupList;
     private FSEList theFSEList;
     private long nextFoodNumber;
+    private long nextFSENumber;
     
     
     public SerializedDataModel(){
@@ -39,6 +40,11 @@ public class SerializedDataModel implements Serializable {
     public long getNextFoodNumber(){
         nextFoodNumber = nextFoodNumber + 1;
         return nextFoodNumber;
+    }
+    
+    public long getNextFSENumber(){
+        nextFSENumber = nextFSENumber + 1;
+        return nextFSENumber;
     }
     
     public UserList getUserList(){

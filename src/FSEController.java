@@ -9,24 +9,24 @@
  */
 public class FSEController {
     private MainMenuController parentMainMenuCntl;
-    private FoodListView theFSEListUI;
+    private FSEListView theFSEListUI;
     private FSEDetailView theFSEDetailUI;
-    private FoodTableModel theFoodTableModel;
+    private FSETableModel theFSETableModel;
     
     public FSEController(MainMenuController theMainMenuCntl){
         parentMainMenuCntl = theMainMenuCntl;
         showFSEListUI();
     }
     
-    public FSETableModel getFoodTableModel(){ // Write this class...wooo!
-        if(theFoodTableModel == null){
-            theFoodTableModel = new FoodTableModel(this);
+    public FSETableModel getFSETableModel(){ // Write this class...wooo!
+        if(theFSETableModel == null){
+            theFSETableModel = new FSETableModel(this);
         }
-        return theFoodTableModel;
+        return theFSETableModel;
     }
     
-    public void showFSEDetailUI(int selectedRow, Food theFood){
-        theFSEDetailUI = new FSEDetailView(this, selectedRow, theFood); // figure this out
+    public void showFSEDetailUI(int selectedRow, FSE theFSE){
+        theFSEDetailUI = new FSEDetailView(this, selectedRow, theFSE); // figure this out
         theFSEDetailUI.setVisible(true);
     }
     
@@ -35,23 +35,23 @@ public class FSEController {
         theFSEListUI.setVisible(true);
     }
     
-    public Food getFSE(int foodToGet){
-        return theFoodTableModel.getFood(foodToGet);
+    public FSE getFSE(int fseToGet){
+        return theFSETableModel.getFSE(fseToGet);
     }
     
     public void addFSE(FSE theNewFSE){
-        theFoodTableModel.addFood(theNewFSE); // add the FSE Table Model
+        theFSETableModel.addFSE(theNewFSE); // add the FSE Table Model
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
     }
     
    public void changeFSE(int selectedRow, FSE theFSEToChange){
-        theFoodTableModel.changeFood(selectedRow, theFSEToChange); // change to FSE table model
+        theFSETableModel.changeFSE(selectedRow, theFSEToChange); // change to FSE table model
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
     }
    
        
-    public void deleteFSE(int foodToDelete){
-        theFoodTableModel.deleteFood(foodToDelete);// Change to FSETableModel
+    public void deleteFSE(int fseToDelete){
+        theFSETableModel.deleteFSE(fseToDelete);// Change to FSETableModel
         SerializedDataCntl.getSerializedDataCntl().writeSerializedDataModel();
     }
     

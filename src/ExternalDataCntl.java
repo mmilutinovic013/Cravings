@@ -25,18 +25,21 @@ public class ExternalDataCntl {
         theMainMenuCntl = parentMainMenuCntl;
         if(confirmImport()){
             getExternalFood();
+            getFSE();
         }
     }
     
     public ExternalDataCntl(){
         if(confirmImport()){
             getExternalFood();
+            getFSE();
         }
     }
       
     public void getExternalFood(){
         getFoodGroup(); // make static so external data controller can get the list.  Translate code into string and make the data into string attribute of food
         getFood(); // Figure this out
+        getFSE();
         //getFoodDescription();
     }
     
@@ -126,12 +129,14 @@ public class ExternalDataCntl {
       
       public void getFSE(){
         String filePath = EXTERNAL_DATA_PATH+FSE_FILE_NAME;
-        File foodFile = new File(filePath);
+        File fseFile = new File(filePath);
+          System.out.println("It gets here");
         try{
-            Scanner in = new Scanner(foodFile);
+            Scanner in = new Scanner(fseFile);
             String nextLine = "";
         
             while(in.hasNextLine()){
+                System.out.println("FSE is being written");
                 nextLine = in.nextLine();
                 //System.out.println(nextLine);
                 FSE tmpFSE = new FSE(nextLine);
@@ -141,6 +146,7 @@ public class ExternalDataCntl {
             System.out.println(SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFSEList().getListOfFSE().size());
             
         }catch(Exception ex){
+            System.out.println("FSE is not being written");
             ex.printStackTrace();
         }
         // Write the newly imported FoodGroupList to disk.
