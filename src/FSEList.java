@@ -14,7 +14,6 @@ import java.util.ArrayList;
 public class FSEList implements Serializable {
     
     private ArrayList<FSE> theFSEList = new ArrayList();
-    private ArrayList<Food>theFSEMenu = new ArrayList();
     
     public FSEList(){
      
@@ -22,5 +21,4 @@ public class FSEList implements Serializable {
     public ArrayList<FSE> getListOfFSE(){
         return theFSEList;
     } 
-    
 }

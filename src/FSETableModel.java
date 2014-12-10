@@ -40,7 +40,7 @@ public class FSETableModel extends AbstractTableModel {
         switch(col){
             case 0: objectToReturn = fseTableData.get(row).getFSEName();break;
             case 1: objectToReturn = fseTableData.get(row).getFSEDescription();break;
-            case 2: objectToReturn = fseTableData.get(row).getFSEDescription();break;
+            case 2: objectToReturn = fseTableData.get(row).getFSEMenu().get(0).getFoodName();break; // This returns the first menu item
         }
         return objectToReturn;
     }

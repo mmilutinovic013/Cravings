@@ -23,13 +23,8 @@ public class FSE implements Serializable {
     private String fseGenre;
     private double price;
     private int calories;
-    //
-    // probably a really bad idea...
-    //
-    //
-    // end probably really bad idea...
-    //
-    private ArrayList<Food>fseMenu = new ArrayList();
+    private ArrayList<Food> theFSEMenu = new ArrayList(); //Because we only really care about the names
+    private ArrayList<Food> theFoodList = SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFoodList().getListOfFoods();
     
 	public FSE(){
 		
@@ -37,9 +32,10 @@ public class FSE implements Serializable {
         
       public FSE(String importFoodString){
         String delimiter = "~";
-        String[] tempFoodArray = importFoodString.split(delimiter);
-        this.fseName = tempFoodArray[1];
-        this.fseAddress = tempFoodArray[3];
+        String[] tempFSEArray = importFoodString.split(delimiter);
+        this.fseName = tempFSEArray[1];
+        this.fseAddress = tempFSEArray[3];
+        this.theFSEMenu = buildFSEMenu();
     }
     
     public FSE(String newFoodNumber, String newFoodName, String newFoodDescription){
@@ -51,10 +47,20 @@ public class FSE implements Serializable {
         this.vegan = true;
         this.glutenFree = true;
         this.fseGenre = "American";
+        //this.theFSEMenu = buildFSEMenu();
+
+    }
+    
+    public ArrayList<Food> buildFSEMenu(){
+        for(int i = 0; i < 10; i++){
+            int foodNumber = (int)((Math.random() * theFoodList.size()));
+            theFSEMenu.add(theFoodList.get(foodNumber));
+        }
+        return theFSEMenu;
     }
     
     public void setFSEMenu(ArrayList<Food> newFSEMenu){
-        fseMenu = newFSEMenu;
+        theFSEMenu = newFSEMenu;
     }
     
     public void setFSENumber(String newFSENumber){
@@ -74,7 +80,7 @@ public class FSE implements Serializable {
     }
     
     public ArrayList<Food> getFSEMenu(){
-        return fseMenu;
+        return theFSEMenu;
     }
     
     public String getFSENumber(){
