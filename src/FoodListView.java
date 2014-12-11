@@ -1,6 +1,7 @@
 
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.table.TableModel;
@@ -21,20 +22,21 @@ public class FoodListView extends JFrame{
     JButton deleteButton;
     JButton editButton;
     JButton newButton;
+    JButton addToMenuButton;
+    ArrayList<FSE> fseTableData = SerializedDataCntl.getSerializedDataCntl().getSerializedDataModel().getFSEList().getListOfFSE();
     
     TableRowSorter<TableModel> foodTableSorter;
     
     JPanel filterPanel;
     JButton searchButton;
     JLabel filterLabel;
-    JTextField filterTextField;
     JComboBox filterFieldList;
 
     
     public FoodListView(FoodController theFoodCntl){
         parentFoodCntl = theFoodCntl;
         this.initCustomComponents();
-        this.setSize(400, 600);
+        this.setSize(500, 700);
         this.setLocationRelativeTo(null);
         this.setTitle("Foods List");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,7 +55,9 @@ public class FoodListView extends JFrame{
         editButton = new JButton("Edit");
         editButton.addActionListener(new EditButtonListener());
         deleteButton = new JButton("Delete");
-        deleteButton.addActionListener(new DeleteButtonListener());
+        deleteButton.addActionListener(new AddToMenuButtonListener());
+        addToMenuButton = new JButton("Add To Menu");
+        addToMenuButton.addActionListener(new AddToMenuButtonListener());
 
         //Table initialization
         theFoodTable = new JTable(parentFoodCntl.getFoodTableModel());
@@ -78,44 +82,31 @@ public class FoodListView extends JFrame{
         
         // Food table filter (search)
         filterLabel = new JLabel("Search (Filter)");
-        filterTextField = new JTextField(15);
-        filterTextField.addActionListener(new FilterTextFieldListener());
+
         
         //Need to initialize the JComboBox after the table to get the columns.
-        String[] columnNames = new String[theFoodTable.getModel().getColumnCount()];
-        for(int i = 0; i < columnNames.length; i++){
-            columnNames[i] = theFoodTable.getModel().getColumnName(i);
+        ArrayList<String> columnNames = new ArrayList();
+        for(int i = 0; i < fseTableData.size(); i++){
+            columnNames.add(fseTableData.get(i).getFSEName());
         }
-        filterFieldList = new JComboBox(columnNames);      
+       
+        filterFieldList = new JComboBox(columnNames.toArray());      
         
         filterPanel.add(filterFieldList);
         filterPanel.add(filterLabel);
-        filterPanel.add(filterTextField);
         
         buttonPanel.add(backButton);
         buttonPanel.add(deleteButton);
         buttonPanel.add(editButton);
         buttonPanel.add(newButton);
+        buttonPanel.add(addToMenuButton);
+
 
         
         this.getContentPane().add(buttonPanel, BorderLayout.NORTH);
         this.getContentPane().add(tablePanel, BorderLayout.CENTER);
         this.getContentPane().add(filterPanel, BorderLayout.SOUTH);
-    }
-    
-        // More or less straight out of the Oracle JTable tutorial
-    public class FilterTextFieldListener implements ActionListener{
-        public void actionPerformed(ActionEvent evt){        
-            RowFilter<TableModel, Object> rowFilter = null;
-            try {
-                rowFilter = RowFilter.regexFilter(filterTextField.getText(), filterFieldList.getSelectedIndex());
-            } catch (java.util.regex.PatternSyntaxException e) {
-                return;
-            }
-            FoodListView.this.foodTableSorter.setRowFilter(rowFilter);
-        }
-    }
-    
+    } 
     
    public class EditButtonListener implements ActionListener{
         public void actionPerformed(ActionEvent evt){
@@ -147,6 +138,21 @@ public class FoodListView extends JFrame{
     
     public class BackButtonListener implements ActionListener{
         public void actionPerformed(ActionEvent evt){        
+            FoodListView.this.dispose();
+            FoodListView.this.setVisible(false);
+            FoodListView.this.parentFoodCntl.getMainMenuCntl().showMenu();
+        }
+    }
+    
+    public class AddToMenuButtonListener implements ActionListener{
+        public void actionPerformed(ActionEvent evt){ 
+            // Get the Food 
+            int selectedTableRow = theFoodTable.getSelectedRow();
+            int selectedModelRow = theFoodTable.convertRowIndexToModel(selectedTableRow);
+            Food selectedFood = FoodListView.this.parentFoodCntl.getFood(selectedModelRow);
+            // Get Value in Dropdown Menu
+            int fseToAddToIndex = FoodListView.this.filterFieldList.getSelectedIndex();
+            fseTableData.get(fseToAddToIndex).getFSEMenu().add(selectedFood);
             FoodListView.this.dispose();
             FoodListView.this.setVisible(false);
             FoodListView.this.parentFoodCntl.getMainMenuCntl().showMenu();
