@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
@@ -27,6 +28,7 @@ public class FindFoodView extends JFrame {
     JTextField theTextBox = new JTextField();
     
     ButtonGroup theButtonGroup = new ButtonGroup();
+    ArrayList<String> theOutputList = new ArrayList();
         
     FindFoodController parentFindFoodController;
     JButton backToMainButton = new JButton("Back to Main Menu!");
@@ -74,13 +76,30 @@ public class FindFoodView extends JFrame {
         for(int i = 0; i < theFSEList.size(); i++){
             for(int j = 0; j < theFSEList.get(i).getFSEMenu().size(); j++){
                 if(theFSEList.get(i).getFSEMenu().get(j).getFoodName().contains(theSearch)){
-                    System.out.println("Match Found at Restauraunt");
+                     theOutputList.add(theSearch + " Found at " + theFSEList.get(i).getFSEName());
                 }
             }
         }
-
-        MainMenuController theMainMenuController = new MainMenuController();
+        
+        displaySearchResults(theOutputList);
+        
         this.dispose();
+    }
+    public void displaySearchResults(ArrayList<String> theMessage){
+            String message = "";
+            for(int i = 0; i < theMessage.size(); i++){
+                 message = message + theMessage.get(i) +"\n ";
+            }
+            String title = "Search Results";
+            // display the JOptionPane showConfirmDialog
+            int result = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
+            if (result == JOptionPane.YES_OPTION){
+                MainMenuController theMainMenuController = new MainMenuController();
+            }
+            else{
+             MainMenuController theMainMenuController = new MainMenuController();                
+            }
+
     }
     // To Do : Add a search button action performed
     
